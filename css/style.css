@@ -32,27 +32,27 @@ img {
   font-weight: 500;
   color: #000000;
 }
-header{
+
+header {
   position: fixed;
-  top:0;
+  top: 0;
   z-index: 999;
   background-color: white;
   width: 100%;
   border-bottom: 2px solid #ECECEC;
 }
-/* =================== END NEWS TICKER =================== */
 
 /* ======================= CONTAINER ======================= */
 .custom-container {
   width: 90%;
   max-width: 1200px;
-  margin:auto;
-
+  margin: auto;
 }
-/* =================== END CONTAINER =================== */
-.close-btn{
+
+.close-btn {
   display: none;
 }
+
 /* ======================= HEADER ======================= */
 .logo-section {
   display: flex;
@@ -93,7 +93,9 @@ header{
   outline: none;
 }
 
-.contact, .likes, .shopping-bag {
+.contact,
+.likes,
+.shopping-bag {
   position: relative;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -113,7 +115,9 @@ header{
   font-size: 10px;
 }
 
-.likes:hover, .contact:hover, .shopping-bag:hover {
+.likes:hover,
+.contact:hover,
+.shopping-bag:hover {
   transform: scale(1.1);
 }
 
@@ -127,7 +131,6 @@ header{
   top: -8px;
   right: -8px;
 }
-/* =================== END HEADER =================== */
 
 /* ======================= NAVBAR ======================= */
 .navbar {
@@ -140,14 +143,13 @@ header{
   justify-content: center;
   gap: 40px;
   padding: 10px 0;
-   box-shadow: #ccc;
+  box-shadow: #ccc;
 }
 
 .nav-list li a {
   font-size: 15px;
   color: black;
 }
-/* =================== END NAVBAR =================== */
 
 /* ======================= DROPDOWN MENU ======================= */
 .dropdown {
@@ -159,16 +161,13 @@ header{
   width: 80vw;
   padding: 20px;
   padding-bottom: 30px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
 
 .dropdown-wrapper:hover .dropdown {
-  display:flex;
+  display: flex;
 }
-
-
-
 
 .dropdown-column {
   flex: 1 1 20%;
@@ -225,25 +224,16 @@ header{
 #fragrances-dropdown .dropdown-image {
   margin-right: 20px;
 }
-/* =================== END DROPDOWN MENU =================== */
 
 /* ======================= HERO SECTION SWIPER ======================= */
 .hero-section {
   margin-top: 160px;
 }
+
 swiper-container {
   width: 100%;
   height: 100%;
 }
-
-/* swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #444;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 swiper-slide img {
   display: block;
@@ -251,7 +241,6 @@ swiper-slide img {
   height: 100%;
   object-fit: cover;
 }
-/* =================== END HERO SECTION SWIPER =================== */
 
 /* ======================= LATEST ARRIVAL SECTION ======================= */
 .latest-arrival-section {
@@ -310,7 +299,7 @@ swiper-slide img {
   width: 70%;
 }
 
- swiper-slide {
+swiper-slide {
   text-align: left;
   font-size: 18px;
   background-color: white;
@@ -323,16 +312,15 @@ swiper-slide img {
   overflow: hidden;
 }
 
- swiper-slide img {
+swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
-   transition: all 1s ease;
+  transition: all 1s ease;
 }
 
-
 .new-arrival-swipper-container swiper-slide img:hover {
-   transform: scale(1.06);
+  transform: scale(1.06);
 }
 
 swiper-slide p {
@@ -346,27 +334,26 @@ swiper-slide .swiper-body {
   display: flex;
   flex-direction: column;
   align-items: left;
-
 }
 
- .swipper-body {
+.swipper-body {
   margin-top: 12px;
 }
 
- .swipper-body span {
+.swipper-body span {
   font-size: 14px;
 }
 
- .swipper-body .old-price {
+.swipper-body .old-price {
   text-decoration: line-through;
-   margin-right:4px;
+  margin-right: 4px;
 }
 
 .swipper-body .new-price {
   color: red;
 }
 
- .swipper-body h2 {
+.swipper-body h2 {
   white-space: nowrap;
   font-size: 14px;
 }
@@ -379,46 +366,45 @@ swiper-slide .swiper-body {
   color: white;
   padding: 0px 8px;
 }
-/* =================== END LATEST ARRIVAL SECTION =================== */
 
-
-/* ===================CATEGORY SECTION START=================== */
-.category-wrapper{
+/* ======================= CATEGORY SECTION ======================= */
+.category-wrapper {
   display: flex;
-  gap:18px;
+  gap: 18px;
   margin-bottom: 10px;
   flex-wrap: wrap;
 }
-.category-item{
-  width :32%;
-  height: 100%; 
+
+.category-item {
+  width: 32%;
+  height: 100%;
   overflow: hidden;
-  position:relative;
+  position: relative;
 }
-#category-section{
+
+#category-section {
   margin-top: 40px;
-  padding-top:30px;
+  padding-top: 30px;
   margin-bottom: 20px;
 }
-.category-wrapper .category-item img:hover{
-  transition:all 1s ease;
-  transform :scale(1.08);
+
+.category-wrapper .category-item img:hover {
+  transition: all 1s ease;
+  transform: scale(1.08);
 }
-.category-item .description-container p{
-  color:white;
+
+.category-item .description-container p {
+  color: white;
 }
-.category-item .description-container h1{
-  font-size:38px;
+
+.category-item .description-container h1 {
+  font-size: 38px;
   font-weight: 500;
 }
 
-/*=====================Category Section End=============================*/
-
-
-
-/* Style the left (previous) arrow */
+/* ======================= SWIPER ARROWS ======================= */
 swiper-container::part(button-prev) {
-  color:black;
+  color: black;
   width: 20px;
   height: 20px;
   font-size: 20px;
@@ -427,9 +413,7 @@ swiper-container::part(button-prev) {
   justify-content: center;
 }
 
-/* Style the right (next) arrow */
 swiper-container::part(button-next) {
-
   color: black;
   border-radius: 50%;
   width: 20px;
@@ -437,241 +421,500 @@ swiper-container::part(button-next) {
   font-size: 20px;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
 }
 
-/*=====================Fragrance  Section Start=============================*/
-#fragrance-section{
+/* ======================= FRAGRANCE SECTION ======================= */
+#fragrance-section {
   display: flex;
-  margin-top :60px;
+  margin-top: 60px;
   height: 500px;
 }
-.fragrance-items{
-  width:50%;
+
+.fragrance-items {
+  width: 50%;
   height: 100%;
 }
+
 .fragrance-beauty-section-swipper swiper-container {
   width: 100%;
   height: 100%;
-  padding:30px 20px 10px 40px;
+  padding: 30px 20px 10px 40px;
   background-color: #ECECEC;
-  
 }
-.fragrance-beauty-section-swipper swiper-slide{
+
+.fragrance-beauty-section-swipper swiper-slide {
   background-color: transparent;
   overflow: hidden;
 }
 
-.fragrance-beauty-section-swipper swiper-slide  img{
-   display: block;
-   width: 95%;
-   height: 80%;
+.fragrance-beauty-section-swipper swiper-slide img {
+  display: block;
+  width: 95%;
+  height: 80%;
 }
 
-.fragrance-beauty-section-swipper swiper-slide  img:hover{
-  transform:scale(1.08);
-}
-#fragrance-main{
-  overflow:hidden;
-  position:relative;
-}
-#fragrance-main img{
-     height:500px;
-     transition:all 0.3s ease;
-}
-#fragrance-main img:hover{
+.fragrance-beauty-section-swipper swiper-slide img:hover {
   transform: scale(1.08);
 }
 
-.beauty-items{
-  width:50%;
-  height:100%;
+#fragrance-main {
+  overflow: hidden;
+  position: relative;
 }
-.fragrance-beauty-section-swipper .swipper-body .new-price{
-  color:black;
+
+#fragrance-main img {
+  height: 500px;
+  transition: all 0.3s ease;
 }
-#beauty-section{
+
+#fragrance-main img:hover {
+  transform: scale(1.08);
+}
+
+/* ======================= BEAUTY SECTION ======================= */
+.beauty-items {
+  width: 50%;
+  height: 100%;
+}
+
+.fragrance-beauty-section-swipper .swipper-body .new-price {
+  color: black;
+}
+
+#beauty-section {
   display: flex;
   height: 500px;
   background-color: #ECECEC;
-  margin-bottom : 60px;
+  margin-bottom: 60px;
 }
-#beauty-main{
+
+#beauty-main {
   position: relative;
   overflow: hidden;
 }
-#beauty-main img{
-  height:500px;
-  transition:all 0.3s ease;
+
+#beauty-main img {
+  height: 500px;
+  transition: all 0.3s ease;
 }
-#beauty-main img:hover{
-  transform : scale(1.08);
+
+#beauty-main img:hover {
+  transform: scale(1.08);
 }
-.price{
+
+.price {
   font-size: 14px;
-  color:black;
+  color: black;
 }
-.description-container{
-  position : absolute;
-  top : 70%;
-  left:30%;
+
+.description-container {
+  position: absolute;
+  top: 70%;
+  left: 30%;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.description-container h1{
-  font-size : 65px;
-  color :white;
+
+.description-container h1 {
+  font-size: 65px;
+  color: white;
   padding-bottom: 8px;
 }
-.description-container a{
-  color : white;
-  border : 2px solid white;
-  padding :8px 20px;
-  transition:all 0.3s ease;
-}
-.description-container a:hover{
-  transform : scale(1.02);
-  border:none;
-  background-color: #000000;
-  opacity:0.5;
-} 
-/*--======== Fragrance and Beauty Section End==========-----*/
-/*--======== Mensware Section Start ================----------*/
-#mensware-section{
-  width:100%;
-  margin:50px 0px;
-  position:relative;
-}
-.mensware-section-category{
- position:absolute;
- left:40%;
- bottom: 12%;
- z-index: 999;
+
+.description-container a {
+  color: white;
+  border: 2px solid white;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
 }
 
-.mensware-section-category span{
+.description-container a:hover {
+  transform: scale(1.02);
+  border: none;
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+/* ======================= MENS WARE SECTION ======================= */
+#mensware-section {
+  width: 100%;
+  margin: 50px 0px;
+  position: relative;
+}
+
+.mensware-section-category {
+  position: absolute;
+  left: 40%;
+  bottom: 12%;
+  z-index: 999;
+}
+
+.mensware-section-category span {
   margin-right: 20px;
   font-size: 24px;
   font-weight: 500;
 }
-/*-----------MensWare Section End-----------------*/
-/* ----------Social Media Section Start--------------- */
-#social-media-section{
+
+/* ======================= SOCIAL MEDIA SECTION ======================= */
+#social-media-section {
   width: 90%;
   max-width: 1100px;
-  margin: 40px auto; 
+  margin: 40px auto;
 }
 
-.social-media-section-wrapper{
-   margin:20px auto;
-  display:flex;
+.social-media-section-wrapper {
+  margin: 20px auto;
+  display: flex;
   flex-direction: column;
   align-items: center;
   height: auto;
 }
-.social-media-section-wrapper h1{
+
+.social-media-section-wrapper h1 {
   font-size: 40px;
   text-transform: capitalize;
 }
-.social-media-section-wrapper .social-media-links{
-  padding:15px 0px;
-}
-.social-media-section-wrapper .social-media-links a{
-  display: inline;
-  color:black;
-  padding-right:40px ;
-  /* font-weight: bold; */
+
+.social-media-section-wrapper .social-media-links {
+  padding: 15px 0px;
 }
 
-/* ----------Social Media Section End--------------- */
+.social-media-section-wrapper .social-media-links a {
+  display: inline;
+  color: black;
+  padding-right: 40px;
+}
+
+/* ======================= FOOTER ======================= */
 .footer {
-    background: #f3f3f3;
-    padding: 40px 0px;
+  background: #f3f3f3;
+  padding: 40px 0px;
+}
+
+.footer-top {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  padding-left: 20px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+.contact-column ul li i {
+  margin-right: 6px;
+  padding: 8px 0px;
+}
+
+.contact-column li span {
+  line-height: 1.02;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding-bottom: 40px;
+}
+
+.footer-col ul li {
+  margin: 8px 0;
+  color: black;
+  font-size: 14px;
+}
+
+.footer-col ul li a {
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #444;
+}
+
+.newsletter-col p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.newsletter-form {
+  display: flex;
+  max-width: 300px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+.newsletter-form button {
+  background: #000;
+  border: none;
+  padding: 0 15px;
+  border-radius: 0 4px 4px 0;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+  background: #444;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 30px auto 0;
+  padding: 40px 0px 20px 0px;
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+}
+
+.social-icons a i {
+  margin-right: 20px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a i:hover {
+  transform: translateY(4px);
+}
+
+/* =====================================================================
+   SEARCH RESULTS SECTION — Global styles (all screen sizes)
+   ===================================================================== */
+
+#search-results-section {
+  width: 100%;
+  background-color: #fafafa;
+  padding: 48px 0 80px;
+  min-height: 70vh;
+  animation: srFadeIn 0.3s ease both;
+}
+
+@keyframes srFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
   }
-  .footer-top {
-    padding:40px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-   
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .footer-col {
-     padding-left: 20px;
-    }
-  .footer-col h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
-  }
-  .footer-col{
-    flex:1;
-  }
-  .contact-column ul li i{
-     margin-right: 6px;
-     padding:8px 0px;
-  }
-  .contact-column li span{
-    line-height: 1.02;
-  }
-  .footer-col ul {
-    list-style: none;
-    padding-bottom: 40px;
-  }
-  .footer-col ul li {
-    margin: 8px 0;
-    color:black;
-    font-size: 14px;
-  }
-  .footer-col ul li a {
-    transition: color .3s;
-  }
-  .footer-col ul li a:hover {
-    color: #444;
-  }
-  .newsletter-col p {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-  .newsletter-form {
-    display: flex;
-    max-width: 300px;
-  }
-  .newsletter-form input {
-    flex: 1;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
-    font-size: 14px;
-  }
-  .newsletter-form button {
-    background: #000;
-    border: none;
-    padding: 0 15px;
-    border-radius: 0 4px 4px 0;
-    color: #fff;
-    transition: background .3s;
-  }
-  .newsletter-form button:hover {
-    background: #444;
-  }
-  .footer-bottom {
-    max-width: 1200px;
-    margin: 30px auto 0;
-    padding: 40px 0px 20px 0px;
-    text-align: center;
-    font-size: 14px;
-    color:#000;
-  }
-  .social-icons  a i{
-    margin-right: 20px;
-    transition: all 0.3s ease;
-  }
-  .social-icons  a i:hover{
-    transform: translateY(4px);
-  }
-/* ================= MOBILE XS (≤576px) ================= */
-/* ================= DESKTOP LG (≥1200px) ================= */
+}
+
+#search-results-section > .custom-container {
+  border-top: 2px solid #ECECEC;
+  padding-top: 36px;
+}
+
+.search-results-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 36px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.search-results-header h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+  letter-spacing: 0.3px;
+}
+
+.search-results-header h2 span {
+  font-weight: 700;
+  color: #111;
+  font-size: 20px;
+}
+
+#result-count-badge {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  margin-left: 10px;
+  vertical-align: middle;
+  letter-spacing: 0.5px;
+}
+
+#clear-search-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: transparent;
+  color: #111;
+  border: 1.5px solid #111;
+  padding: 9px 20px;
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+#clear-search-btn:hover {
+  background: #111;
+  color: #fff;
+}
+
+#clear-search-btn i {
+  font-size: 10px;
+}
+
+#no-results-msg {
+  text-align: center;
+  padding: 80px 20px;
+  color: #888;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 1.8;
+}
+
+#no-results-msg strong {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+#search-results-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px 20px;
+  align-items: start;
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.result-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.09);
+  transform: translateY(-3px);
+}
+
+.result-card-img-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 320px;
+  background: #f0f0f0;
+  flex-shrink: 0;
+}
+
+.result-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.result-card:hover .result-card-img-wrap img {
+  transform: scale(1.07);
+}
+
+.result-sale-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #e00;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 3px 9px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.result-card-body {
+  padding: 14px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-grow: 1;
+}
+
+.result-category {
+  font-size: 10px;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.result-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111;
+  margin: 0;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.result-price {
+  margin-top: auto;
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.result-price .old-price {
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.result-price .new-price {
+  font-size: 13px;
+  font-weight: 600;
+  color: #d00;
+}
+
+.result-price .price {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+}
+
+/* =====================================================================
+   END SEARCH RESULTS SECTION
+   ===================================================================== */
+
+/* ======================= DESKTOP LG (≥1200px) ======================= */
 @media (min-width: 1200px) {
   nav .nav-list {
     display: flex !important;
@@ -688,8 +931,8 @@ swiper-container::part(button-next) {
   }
 }
 
-/* ================= DESKTOP SM (992px–1199px) ================= */
-@media  (max-width: 1199px) {
+/* ======================= DESKTOP SM (992px–1199px) ======================= */
+@media (max-width: 1199px) {
   .menu-toggle {
     display: none;
   }
@@ -700,12 +943,15 @@ swiper-container::part(button-next) {
     align-items: center;
     gap: 2rem;
   }
-  .category-item{
-    width:280px;
+
+  .category-item {
+    width: 280px;
   }
-  .new-arrival-category img{
-    height:450px;
+
+  .new-arrival-category img {
+    height: 450px;
   }
+
   .category-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1199px;
@@ -713,15 +959,19 @@ swiper-container::part(button-next) {
     margin: 0 auto;
     padding: 0;
   }
-   #fragrance-main img{
+
+  #fragrance-main img {
     object-fit: cover;
   }
-  #beauty-main img{
+
+  #beauty-main img {
     object-fit: cover;
   }
-   #fragrance-main .description-container h1{
+
+  #fragrance-main .description-container h1 {
     font-size: 36px;
   }
+
   .logo-section {
     display: flex;
     justify-content: space-around;
@@ -734,73 +984,93 @@ swiper-container::part(button-next) {
   .nav-list li a {
     font-size: 14px;
   }
-    #kid-pret-dropdown img{
-      width:300px;
-    }
-    #fragrances-dropdown{
-      width:90vw;
-      left:0px;
-    }
-   #beauty-dropdown{
+
+  #kid-pret-dropdown img {
+    width: 300px;
+  }
+
+  #fragrances-dropdown {
+    width: 90vw;
+    left: 0px;
+  }
+
+  #beauty-dropdown {
     width: 100vw;
-    left:0px;
-   }
-   #beuty-dropdown img{
-    width:190px;
-   }
-   #mens-dropdown{
-    width: 100vw ;left:0px;
-   }
-   #unstitched-dropdown{
-    width:100vw;
-    left:0px;
-   }
-   #ready-to-wear-dropdown{
-      width:100vw;
-      left:0px;
-   }
-   #arrival-dropdown{
-    width:100vw;
-    left:0px;
-   }
+    left: 0px;
+  }
+
+  #beauty-dropdown img {
+    width: 190px;
+  }
+
+  #mens-dropdown {
+    width: 100vw;
+    left: 0px;
+  }
+
+  #unstitched-dropdown {
+    width: 100vw;
+    left: 0px;
+  }
+
+  #ready-to-wear-dropdown {
+    width: 100vw;
+    left: 0px;
+  }
+
+  #arrival-dropdown {
+    width: 100vw;
+    left: 0px;
+  }
+
+  /* Search grid: 3 columns on smaller desktops */
+  #search-results-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-
-/* ================= TABLET (768px–991px) ================= */
+/* ======================= TABLET (768px–991px) ======================= */
 @media (max-width: 991px) {
   .menu-toggle {
     display: none;
   }
-  .dropdown{
+
+  .dropdown {
     display: none !important;
   }
+
   .nav-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
   }
-   .search{
-    border-bottom:none;
-   }
- .nav-list li a {
+
+  .search {
+    border-bottom: none;
+  }
+
+  .nav-list li a {
     font-size: 13px;
     white-space: nowrap;
   }
-  .category-item{
+
+  .category-item {
     width: 25vw;
   }
-  .category-item img{
+
+  .category-item img {
     width: 100%;
     max-width: 25vw;
   }
+
   .category-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 991px;
     width: 100%;
-    padding: 0 8px; 
+    padding: 0 8px;
     justify-content: center;
-    margin: auto; 
+    margin: auto;
   }
 
   .category-item .description-container h1 {
@@ -836,32 +1106,37 @@ swiper-container::part(button-next) {
   .social-media-links a {
     font-size: 12px;
   }
-    #fragrance-main img{
-    object-fit: cover;
-  }
-  #beauty-main{
+
+  #fragrance-main img {
     object-fit: cover;
   }
 
+  #beauty-main {
+    object-fit: cover;
+  }
 
   .custom-container {
     max-width: 100%;
     margin: auto;
   }
-   .new-arrival-category img{
-    height:450px;
+
+  .new-arrival-category img {
+    height: 450px;
   }
-  
+
+  /* Search grid: 2 columns on tablet */
+  #search-results-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-/* ================= SMALL TABLET (577px–767px) ================= */
+/* ======================= SMALL TABLET (577px–767px) ======================= */
 @media (max-width: 767px) {
- 
-    body{
+  body {
     overflow-x: hidden;
   }
 
-  header{
+  header {
     width: 100%;
     max-width: 767px;
     border-bottom: 2px solid #ECECEC;
@@ -882,8 +1157,9 @@ swiper-container::part(button-next) {
     padding: 0;
     flex: 1;
     position: relative;
-    left:-60px;
+    left: -60px;
   }
+
   .nav-list {
     display: none !important;
     flex-direction: column;
@@ -891,23 +1167,26 @@ swiper-container::part(button-next) {
     background-color: white;
     position: absolute;
     top: -30px;
-    left:10px;
+    left: 10px;
     z-index: 999;
   }
-  .close-btn{
-      display: block !important;
-      border:none;
-      background-color:white;
-      font-size:20px;
-      position:relative;
-      left:120px;
-      top: 10px;
-      padding: 8px;
-      border-radius: 10%
+
+  .close-btn {
+    display: block !important;
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    position: relative;
+    left: 120px;
+    top: 10px;
+    padding: 8px;
+    border-radius: 10%;
   }
-   .close-btn:hover{
+
+  .close-btn:hover {
     background-color: #ECECEC;
-   }
+  }
+
   .nav-list.active {
     display: flex !important;
   }
@@ -918,16 +1197,17 @@ swiper-container::part(button-next) {
     display: block;
     border-bottom: 1px solid #eee;
   }
-   .logo{
+
+  .logo {
     padding-left: 0px;
     padding-right: 100px;
-    flex:2;
-   }
-    .logo-section .logo img {
+    flex: 2;
+  }
+
+  .logo-section .logo img {
     width: 100%;
     max-width: 200px;
     padding-top: 5px;
-   
   }
 
   .icons {
@@ -947,74 +1227,84 @@ swiper-container::part(button-next) {
   .icons .contact {
     display: none;
   }
-   .latest-arrival-section .custom-container .new-arrival-wrapper{
-    display:flex;
-    flex-direction:column;
-  }
-  .new-arrival-swipper-container{
-     width:100%;
-     max-width:767px;
-  }
-   .new-arrival-swipper-container .sale-banner{
-     width:70px;
-     white-space: nowrap;
-   }
-   .new-arrival-category{
-    display: none;
-   }
-   .category-item .description-container{
-    left:60px;
-    position: absolute;
 
-   }
-  
-   .category-item{
-    width: 40vw;
-    height:400px;
+  .latest-arrival-section .custom-container .new-arrival-wrapper {
+    display: flex;
+    flex-direction: column;
   }
-  .category-item img{
+
+  .new-arrival-swipper-container {
+    width: 100%;
+    max-width: 767px;
+  }
+
+  .new-arrival-swipper-container .sale-banner {
+    width: 70px;
+    white-space: nowrap;
+  }
+
+  .new-arrival-category {
+    display: none;
+  }
+
+  .category-item .description-container {
+    left: 60px;
+    position: absolute;
+  }
+
+  .category-item {
+    width: 40vw;
+    height: 400px;
+  }
+
+  .category-item img {
     width: 100%;
     max-width: 40vw;
     height: 400px;
     object-fit: cover;
   }
+
   .category-wrapper {
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     max-width: 767px;
     width: 100%;
     padding: 0 8px;
-    margin: auto; 
+    margin: auto;
   }
 
   .category-item .description-container h1 {
     font-size: 30px;
   }
-   .category-item .description-container p{
-    font-size : 20px;
-}
-  
-  .responsive-category-item{
+
+  .category-item .description-container p {
+    font-size: 20px;
+  }
+
+  .responsive-category-item {
     display: none;
   }
-   
-  #beauty-section{
+
+  #beauty-section {
     display: flex;
     flex-direction: column-reverse;
     height: auto;
   }
-  #beauty-main{
+
+  #beauty-main {
     width: 100%;
-    height:auto;
+    height: auto;
     max-width: 767px;
   }
-  #fragrance-section{
+
+  #fragrance-section {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     height: auto;
   }
-   #fragrance-main{
-     width: 100%;
-    height:auto;
+
+  #fragrance-main {
+    width: 100%;
+    height: auto;
     max-width: 767px;
   }
 
@@ -1025,32 +1315,39 @@ swiper-container::part(button-next) {
     max-width: 767px;
     object-fit: cover;
   }
-  .fragrance-beauty-section-swipper swiper-slide img {
-       height:350px;
-  }
-#fragrance-main .description-container a, #beauty-main .description-container a{
-  display: none;
-}
-#fragrance-section{
-  background-color: #ECECEC;
-}
- #fragrance-main .description-container,
-  #beauty-main .description-container {
-   position: static;
 
+  .fragrance-beauty-section-swipper swiper-slide img {
+    height: 350px;
   }
+
+  #fragrance-main .description-container a,
+  #beauty-main .description-container a {
+    display: none;
+  }
+
+  #fragrance-section {
+    background-color: #ECECEC;
+  }
+
+  #fragrance-main .description-container,
+  #beauty-main .description-container {
+    position: static;
+  }
+
   #fragrance-main .description-container h1,
   #beauty-main .description-container h1 {
     font-size: 40px;
     text-align: center;
     padding-top: 20px;
-    color:#000
+    color: #000;
   }
-  .fragrance-beauty-section-swipper{
+
+  .fragrance-beauty-section-swipper {
     max-width: 767px;
     width: 100%;
   }
-    .new-arrival-category img {
+
+  .new-arrival-category img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -1079,7 +1376,17 @@ swiper-container::part(button-next) {
     margin: auto;
   }
 
+  /* Search grid: 2 columns on small tablet */
+  #search-results-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .result-card-img-wrap {
+    height: 240px;
+  }
 }
+
+/* ======================= MOBILE XS (≤576px) ======================= */
 @media (max-width: 576px) {
   body {
     overflow-x: hidden;
@@ -1091,8 +1398,7 @@ swiper-container::part(button-next) {
     border-bottom: 2px solid #ECECEC;
   }
 
- 
-    .menu-toggle {
+  .menu-toggle {
     display: block;
     background-color: white;
     border: none;
@@ -1101,296 +1407,85 @@ swiper-container::part(button-next) {
     padding: 0;
     flex: 1;
     position: relative;
-    left:0px;
+    left: 0px;
   }
-  .main-header{
+
+  .main-header {
     display: flex;
     justify-content: space-between;
   }
-.logo-section {
-  padding-left: 60px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
 
-.logo-section .logo img {
-  max-width: 900px;
-  width: 100%;
-  padding: 5px 0;
-  object-fit: contain;
-}
- .category-item{
-    width: 40vw;
-    height:400px;
+  .logo-section {
+    padding-left: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
-  .category-item img{
+
+  .logo-section .logo img {
+    max-width: 900px;
+    width: 100%;
+    padding: 5px 0;
+    object-fit: contain;
+  }
+
+  .category-item {
+    width: 40vw;
+    height: 400px;
+  }
+
+  .category-item img {
     width: 100%;
     max-width: 40vw;
     height: 350px;
     object-fit: cover;
   }
+
   .category-wrapper {
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     max-width: 576px;
     width: 100%;
     padding: 0 4px;
-    margin: auto; 
+    margin: auto;
   }
-  
+
   .category-item .description-container h1 {
     font-size: 20px;
   }
-   .category-item .description-container p{
-    font-size : 14px;
-}
-.category-item .description-container{
-    left:30px;
-    position: absolute;
 
-   }
-
-  /* .icons .search{
-    display: none;
+  .category-item .description-container p {
+    font-size: 14px;
   }
-  .icons .likes{
-    display: none;
-  } */
+
+  .category-item .description-container {
+    left: 30px;
+    position: absolute;
+  }
+
   .icons {
     display: none;
     visibility: hidden;
   }
-   
-   .fragrance-beauty-section-swipper{
+
+  .fragrance-beauty-section-swipper {
     max-width: 576px;
     width: 100%;
   }
-  /* =====================================================================
-   SEARCH RESULTS SECTION
-   ===================================================================== */
 
-/* --- Outer section wrapper --- */
-#search-results-section {
-  width: 100%;
-  background-color: #fafafa;
-  padding: 48px 0 80px;
-  min-height: 70vh;
-  animation: srFadeIn 0.3s ease both;
-}
+  /* Search grid: 1 column on mobile */
+  #search-results-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-@keyframes srFadeIn {
-  from { opacity: 0; transform: translateY(12px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
+  .result-card-img-wrap {
+    height: 280px;
+  }
 
-/* --- Divider line under header --- */
-#search-results-section > .custom-container {
-  border-top: 2px solid #ECECEC;
-  padding-top: 36px;
-}
+  .search-results-header h2 {
+    font-size: 15px;
+  }
 
-/* ── Header row ──────────────────────────────────────── */
-.search-results-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-bottom: 36px;
-  padding-bottom: 18px;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.search-results-header h2 {
-  font-size: 18px;
-  font-weight: 400;
-  color: #555;
-  letter-spacing: 0.3px;
-}
-
-.search-results-header h2 span {
-  font-weight: 700;
-  color: #111;
-  font-size: 20px;
-}
-
-/* Result count badge next to heading */
-#result-count-badge {
-  display: inline-block;
-  background: #111;
-  color: #fff;
-  font-size: 11px;
-  font-weight: 600;
-  padding: 3px 10px;
-  margin-left: 10px;
-  vertical-align: middle;
-  letter-spacing: 0.5px;
-}
-
-/* ── Clear button ────────────────────────────────────── */
-#clear-search-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  background: transparent;
-  color: #111;
-  border: 1.5px solid #111;
-  padding: 9px 20px;
-  font-size: 11px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease;
-  white-space: nowrap;
-}
-
-#clear-search-btn:hover {
-  background: #111;
-  color: #fff;
-}
-
-#clear-search-btn i {
-  font-size: 10px;
-}
-
-/* ── No results state ────────────────────────────────── */
-#no-results-msg {
-  text-align: center;
-  padding: 80px 20px;
-  color: #888;
-  font-size: 14px;
-  letter-spacing: 0.3px;
-  line-height: 1.8;
-}
-
-#no-results-msg strong {
-  display: block;
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 8px;
-  font-weight: 500;
-}
-
-/* ── Results grid ────────────────────────────────────── */
-#search-results-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-  gap: 28px 20px;                         /* row-gap col-gap */
-  align-items: start;                     /* cards start at top of each row */
-}
-
-/* ── Single result card ──────────────────────────────── */
-.result-card {
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  cursor: pointer;
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
-}
-
-.result-card:hover {
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.09);
-  transform: translateY(-3px);
-}
-
-/* ── Image wrapper — FIXED height so all cards align ── */
-.result-card-img-wrap {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 320px;       /* ← uniform image height for every card */
-  background: #f0f0f0; /* placeholder colour while image loads  */
-  flex-shrink: 0;
-}
-
-.result-card-img-wrap img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;    /* fills box, crops if needed — keeps same size */
-  object-position: top; /* anchor crop at the top (show face/neckline) */
-  display: block;
-  transition: transform 0.4s ease;
-}
-
-.result-card:hover .result-card-img-wrap img {
-  transform: scale(1.07);
-}
-
-/* ── Sale badge ──────────────────────────────────────── */
-.result-sale-badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;          /* left corner — consistent position */
-  background: #e00;
-  color: #fff;
-  font-size: 9px;
-  font-weight: 700;
-  padding: 3px 9px;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-  z-index: 2;
-}
-
-/* ── Card text body ──────────────────────────────────── */
-.result-card-body {
-  padding: 14px 14px 16px; /* top | sides | bottom */
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  flex-grow: 1;            /* stretches so price always hits bottom */
-}
-
-.result-category {
-  font-size: 10px;
-  font-weight: 600;
-  color: #999;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 0;
-}
-
-.result-title {
-  font-size: 13px;
-  font-weight: 500;
-  color: #111;
-  margin: 0;
-  line-height: 1.45;
-  /* Clamp to 2 lines max — prevents cards from varying in height */
-  display: -webkit-box;
-  /* -webkit-line-clamp: 2; */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-/* Price row always at bottom of card body */
-.result-price {
-  margin-top: auto;
-  padding-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.result-price .old-price {
-  font-size: 12px;
-  font-weight: 400;
-  text-decoration: line-through;
-  color: #aaa;
-}
-
-.result-price .new-price {
-  font-size: 13px;
-  font-weight: 600;
-  color: #d00;
-}
-
-.result-price .price {
-  font-size: 13px;
-  font-weight: 600;
-  color: #111;
-}
-
+  .search-results-header h2 span {
+    font-size: 16px;
+  }
 }

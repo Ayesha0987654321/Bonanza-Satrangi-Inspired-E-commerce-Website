@@ -1,43 +1,30 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Bonanza Satrangi</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!----styel sheet link-->
   <link rel="stylesheet" href="../css/style.css" />
-  <!---bootstarp icons cdn-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-  <!------font Awesome icons cdn------->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" />
-   <!-- Swiper CSS CDN -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
 
   <!-- ========== HEADER START ========== -->
   <header>
-    <!-- News Ticker Start -->
-
     <div class="news_ticker">
       <p>This is the official Bonanza Satrangi website</p>
     </div>
-    <!-- News Ticker End -->
 
-    <!-- Main Header Start -->
     <div class="main-header custom-container">
-    <button class="menu-toggle" onClick="document.querySelector('.nav-list').classList.toggle('active')">
-      &#9776;
-    </button>
-
+      <button class="menu-toggle" onClick="document.querySelector('.nav-list').classList.toggle('active')">
+        &#9776;
+      </button>
       <div class="logo-section">
         <div class="logo">
-          <img src="../assests/images//Group_11.svg" alt="logo" />
+          <img src="../assests/images/Group_11.svg" alt="logo" />
         </div>
         <div class="icons">
           <div class="search">
@@ -60,281 +47,272 @@
         </div>
       </div>
     </div>
-    <!-- Main Header End -->
 
-    <!-- Navbar Start -->
     <nav class="navbar">
       <ul class="nav-list">
-            <button class="close-btn" onclick="document.querySelector('.nav-list').classList.remove('active')">✖</button>
+        <button class="close-btn" onclick="document.querySelector('.nav-list').classList.remove('active')">✖</button>
 
-        <!-- SALE Dropdown Start -->
+        <!-- SALE Dropdown -->
         <li class="dropdown-wrapper">
           <a href="sale.html">SALE</a>
           <div class="dropdown" id="sale-dropdown" style="width:70vw;">
-              <div class="dropdown-column">
-                <h6>Shop by Category</h6>
-                <div class="dropdown-list">
-                  <a href="#">READY TO WEAR</a>
-                  <a href="#">UNSTITCHED</a>
-                  <a href="#">BEAUTY</a>
-                  <a href="#">FRAGRANCES</a>
-                  <a href="#">MENS</a>
-                </div>
+            <div class="dropdown-column">
+              <h6>Shop by Category</h6>
+              <div class="dropdown-list">
+                <a href="#">READY TO WEAR</a>
+                <a href="#">UNSTITCHED</a>
+                <a href="#">BEAUTY</a>
+                <a href="#">FRAGRANCES</a>
+                <a href="#">MENS</a>
               </div>
-              <div class="dropdown-image"><img src="../assests/images//SaleDropdown_img1.webp" width="200px" /></div>
-              <div class="dropdown-image"><img src="../assests/images//SaleDropdown_2.webp" width="200px" /></div>
+            </div>
+            <div class="dropdown-image"><img src="../assests/images/SaleDropdown_img1.webp" width="200px" /></div>
+            <div class="dropdown-image"><img src="../assests/images/SaleDropdown_2.webp" width="200px" /></div>
           </div>
         </li>
-        <!-- SALE Dropdown End -->
 
-        <!-- NEW ARRIVALS Dropdown Start -->
+        <!-- NEW ARRIVALS Dropdown -->
         <li class="dropdown-wrapper">
-          <a href="newArrival.html">NEW ARRIVALS</a>
+          <a href="../html/newArrival.html">NEW ARRIVALS</a>
           <div class="dropdown" id="arrival-dropdown">
-              <div class="dropdown-column">
-                <h6>Shop by Category</h6>
-                <div class="dropdown-list">
-                  <a href="#">Monochrome Collection '25</a>
-                  <a href="#">Kia Collection</a>
-                  <a href="#">Lia collection '25</a>
-                  <a href="#">Summer Pret '25</a>
-                  <a href="#">Sage Collection '25</a>
-                  <a href="#">Summer/Winter Collection '25</a>
-                  <a href="#">Ruha Collection '25</a>
-                  <a href="#">Gul Collection '25</a>
-                </div>
+            <div class="dropdown-column">
+              <h6>Shop by Category</h6>
+              <div class="dropdown-list">
+                <a href="#">Monochrome Collection '25</a>
+                <a href="#">Kia Collection</a>
+                <a href="#">Lia collection '25</a>
+                <a href="#">Summer Pret '25</a>
+                <a href="#">Sage Collection '25</a>
+                <a href="#">Summer/Winter Collection '25</a>
+                <a href="#">Ruha Collection '25</a>
+                <a href="#">Gul Collection '25</a>
               </div>
-              <div class="dropdown-column">
-                <h6>New In</h6>
-                <div class="dropdown-list">
-                  <a href="#">Ready TO Wear</a>
-                  <a href="#">Unstitched</a>
-                  <a href="#">Men</a>
-                  <a href="#">Fragrances</a>
-                  <a href="#">Kids</a>
-                </div>
+            </div>
+            <div class="dropdown-column">
+              <h6>New In</h6>
+              <div class="dropdown-list">
+                <a href="#">Ready TO Wear</a>
+                <a href="#">Unstitched</a>
+                <a href="#">Men</a>
+                <a href="#">Fragrances</a>
+                <a href="#">Kids</a>
               </div>
-              <div class="dropdown-image"><img src="../assests/images//Dropdown_New_Arrival_1.webp" width="200" /></div>
-              <div class="dropdown-image"><img src="../assests/images//Drop-down-New-Arival-2.webp" width="200" /></div>
+            </div>
+            <div class="dropdown-image"><img src="../assests/images/Dropdown_New_Arrival_1.webp" width="200" /></div>
+            <div class="dropdown-image"><img src="../assests/images/Drop-down-New-Arival-2.webp" width="200" /></div>
           </div>
         </li>
-        <!-- NEW ARRIVALS Dropdown End -->
 
-        <!-- Ready TO wear Start -->
+        <!-- READY TO WEAR Dropdown -->
         <li class="dropdown-wrapper">
-          <a href="readyToWear.html">READY TO WEAR</a>
+          <a href="../html/readyToWear.html">READY TO WEAR</a>
           <div class="dropdown" id="ready-to-wear-dropdown">
             <div class="dropdown-column">
-                <h6>SHOP BY CATEGORY</h6>
-                <div class="dropdown-list">
-                  <a href="#">Everyday Wear</a>
-                  <a href="#">Luxury Wear</a>
-                </div>
+              <h6>SHOP BY CATEGORY</h6>
+              <div class="dropdown-list">
+                <a href="#">Everyday Wear</a>
+                <a href="#">Luxury Wear</a>
               </div>
-                <div class="dropdown-column">
-                <h6>SHOP BY TYPE</h6>
-                <div class="dropdown-list">
-                  <a href="#">Printed</a>
-                  <a href="#">Embroidered</a>
-                </div>
+            </div>
+            <div class="dropdown-column">
+              <h6>SHOP BY TYPE</h6>
+              <div class="dropdown-list">
+                <a href="#">Printed</a>
+                <a href="#">Embroidered</a>
               </div>
-                <div class="dropdown-column">
-                <h6>SHOP BY PCS</h6>
-                <div class="dropdown-list">
-                  <a href="#">1 PC</a>
-                  <a href="#">2 PC</a>
-                  <a href="#">3 PC</a>
-                </div>
-          </div>
-          <div class="dropdown-column">
-                <h6>SHOP BY Item</h6>
-                <div class="dropdown-list">
-                  <a href="#">Shirt</a>
-                  <a href="#">Dupatta</a>
-                  <a href="#">Shalwar</a>
-                  <a href="#">Shirt & Trouser</a>
-                  <a href="#">Shirt & Dupatta</a>
-                  <a href="#">Shirt,trouser & Dupatta</a>
-                </div>
-          </div>
+            </div>
+            <div class="dropdown-column">
+              <h6>SHOP BY PCS</h6>
+              <div class="dropdown-list">
+                <a href="#">1 PC</a>
+                <a href="#">2 PC</a>
+                <a href="#">3 PC</a>
+              </div>
+            </div>
+            <div class="dropdown-column">
+              <h6>SHOP BY Item</h6>
+              <div class="dropdown-list">
+                <a href="#">Shirt</a>
+                <a href="#">Dupatta</a>
+                <a href="#">Shalwar</a>
+                <a href="#">Shirt & Trouser</a>
+                <a href="#">Shirt & Dupatta</a>
+                <a href="#">Shirt,trouser & Dupatta</a>
+              </div>
+            </div>
             <div class="dropdown-image"><img src="../assests/images/ReadyToWearDropDownImage.webp" width="300" /></div>
           </div>
         </li>
-        <!---Ready TO wear Drop Down End-->
-        <!----Unstitched Drop Down Start-->
+
+        <!-- UNSTITCHED Dropdown -->
         <li class="dropdown-wrapper">
           <a href="#">UNSTITCHED</a>
-           <div class="dropdown" id="unstitched-dropdown">
+          <div class="dropdown" id="unstitched-dropdown">
             <div class="dropdown-column">
-                <h6>SHOP BY CATEGORY</h6>
-                <div class="dropdown-list">
-                  <a href="#">Everyday Wear</a>
-                  <a href="#">Luxury Wear</a>
-                </div>
+              <h6>SHOP BY CATEGORY</h6>
+              <div class="dropdown-list">
+                <a href="#">Everyday Wear</a>
+                <a href="#">Luxury Wear</a>
               </div>
-                <div class="dropdown-column">
-                <h6>SHOP BY TYPE</h6>
-                <div class="dropdown-list">
-                  <a href="#">Printed</a>
-                  <a href="#">Embroidered</a>
-                </div>
+            </div>
+            <div class="dropdown-column">
+              <h6>SHOP BY TYPE</h6>
+              <div class="dropdown-list">
+                <a href="#">Printed</a>
+                <a href="#">Embroidered</a>
               </div>
-                <div class="dropdown-column">
-                <h6>SHOP BY PCS</h6>
-                <div class="dropdown-list">
-                  <a href="#">1 PC</a>
-                  <a href="#">2 PC</a>
-                  <a href="#">3 PC</a>
-                </div>
+            </div>
+            <div class="dropdown-column">
+              <h6>SHOP BY PCS</h6>
+              <div class="dropdown-list">
+                <a href="#">1 PC</a>
+                <a href="#">2 PC</a>
+                <a href="#">3 PC</a>
+              </div>
+            </div>
+            <div class="dropdown-column">
+              <h6>SHOP BY FABRICS</h6>
+              <div class="dropdown-list">
+                <a href="#">Lawn</a>
+                <a href="#">Cambric</a>
+                <a href="#">Khaddar</a>
+                <a href="#">Jacquard</a>
+              </div>
+            </div>
+            <div class="dropdown-image"><img src="../assests/images/unsitchedDropDownImage.webp" width="300" /></div>
           </div>
-                <div class="dropdown-column">
-                <h6>SHOP BY FABRICS</h6>
-                <div class="dropdown-list">
-                  <a href="#">Lawn</a>
-                  <a href="#">Cambric</a>
-                  <a href="#">Khaddar</a>
-                  <a href="#">Jacquard</a>
-                </div>
-          </div>
-            <div class="dropdown-image"><img src="../assests/images//unsitchedDropDownImage.webp" width="300" /></div>
-          </div>
-        <!------Unstitched Drop Down End-->
         </li>
-        <!---Beauty Drop Drown Start--->
+
+        <!-- BEAUTY Dropdown -->
         <li class="dropdown-wrapper">
           <a href="#">BEAUTY</a>
-            <div class="dropdown" id="beauty-dropdown">
+          <div class="dropdown" id="beauty-dropdown">
             <div class="dropdown-column">
-                <h6>FACE</h6>
-                <div class="dropdown-list">
-                  <a href="#">Primer</a>
-                  <a href="#">Foundation</a>
-                  <a href="#">Blush</a>
-                  <a href="#">Highlighter</a>
-                  <a href="#">Highlighter</a>
-                  <a href="#">Contor&Concealer</a>
-                  <a style="text-decoration: underline; font-weight: bold;">View All</a>
-                </div>
+              <h6>FACE</h6>
+              <div class="dropdown-list">
+                <a href="#">Primer</a>
+                <a href="#">Foundation</a>
+                <a href="#">Blush</a>
+                <a href="#">Highlighter</a>
+                <a href="#">Contor&Concealer</a>
+                <a style="text-decoration: underline; font-weight: bold;">View All</a>
               </div>
-              <div class="dropdown-column">
-                <h6>Lips</h6>
-                <div class="dropdown-list">
-                  <a href="#">Lip Stick</a>
-                  <a href="#">Lip Paint</a>
-                  <a style="text-decoration: underline; font-weight: bold;">View All</a>
-                </div>
+            </div>
+            <div class="dropdown-column">
+              <h6>Lips</h6>
+              <div class="dropdown-list">
+                <a href="#">Lip Stick</a>
+                <a href="#">Lip Paint</a>
+                <a style="text-decoration: underline; font-weight: bold;">View All</a>
               </div>
-              <div class="dropdown-column">
-                <h6>Eyes</h6>
-                <div class="dropdown-list">
-                  <a href="#">EyeLiner</a>
-                  <a href="#">Eye Sahdow</a>
-                  <a href="#">Eyebrow Gel</a>
-                   <a style="text-decoration: underline; font-weight: bold;">View All</a>
-                </div>
+            </div>
+            <div class="dropdown-column">
+              <h6>Eyes</h6>
+              <div class="dropdown-list">
+                <a href="#">EyeLiner</a>
+                <a href="#">Eye Shadow</a>
+                <a href="#">Eyebrow Gel</a>
+                <a style="text-decoration: underline; font-weight: bold;">View All</a>
               </div>
-              <div class="dropdown-column">
-                <h6>NAILS</h6>
-                <div class="dropdown-list">
-                  <a href="#">Nail Color</a>
-                   <a style="text-decoration: underline; font-weight: bold;">View All</a>
-                </div>
+            </div>
+            <div class="dropdown-column">
+              <h6>NAILS</h6>
+              <div class="dropdown-list">
+                <a href="#">Nail Color</a>
+                <a style="text-decoration: underline; font-weight: bold;">View All</a>
               </div>
-              <div class="dropdown-column">
-                <h6>SKIN CARE</h6>
-                <div class="dropdown-list">
-                   <a style="text-decoration: underline; font-weight: bold;">View All</a>
-                </div>
+            </div>
+            <div class="dropdown-column">
+              <h6>SKIN CARE</h6>
+              <div class="dropdown-list">
+                <a style="text-decoration: underline; font-weight: bold;">View All</a>
               </div>
-              <div class="dropdown-image"><img src="../assests/images//beutyDropDownImage1.webp" width="180" /></div>
-              <div class="dropdown-image"><img src="../assests/images//beautyDropDownImage2.webp" width="180" /></div>
+            </div>
+            <div class="dropdown-image"><img src="../assests/images/beutyDropDownImage1.webp" width="180" /></div>
+            <div class="dropdown-image"><img src="../assests/images/beautyDropDownImage2.webp" width="180" /></div>
           </div>
         </li>
-        <!---Beauty Drop Down End-->
-        <!---FRagrances Drop Down STart-->
+
+        <!-- FRAGRANCES Dropdown -->
         <li class="dropdown-wrapper">
           <a href="#">FRAGRANCES</a>
-                <div class="dropdown" id="fragrances-dropdown">
+          <div class="dropdown" id="fragrances-dropdown">
             <div class="dropdown-column">
-                <h6>By Gender</h6>
-                <div class="dropdown-list">
-                  <a href="#">For Him</a>
-                  <a href="#">For Her</a>
-                  <a href="#">Unisex</a>
-                </div>
+              <h6>By Gender</h6>
+              <div class="dropdown-list">
+                <a href="#">For Him</a>
+                <a href="#">For Her</a>
+                <a href="#">Unisex</a>
               </div>
-               <div class="dropdown-column">
-                <h6>By Size</h6>
-                <div class="dropdown-list">
-                  <a href="#">6ml</a>
-                  <a href="#">30ml</a>
-                  <a href="#">50ml</a>
-                  <a href="#">100ml</a>
-                </div>
+            </div>
+            <div class="dropdown-column">
+              <h6>By Size</h6>
+              <div class="dropdown-list">
+                <a href="#">6ml</a>
+                <a href="#">30ml</a>
+                <a href="#">50ml</a>
+                <a href="#">100ml</a>
               </div>
-              <div class="dropdown-image"><img src="../assests/images//fragrancesDropDownImage1.webp" width="500" /></div>
-              <div class="dropdown-image"><img src="../assests/images//fragrancesDropDownImage2.webp" width="500" /></div>
+            </div>
+            <div class="dropdown-image"><img src="../assests/images/fragrancesDropDownImage1.webp" width="500" /></div>
+            <div class="dropdown-image"><img src="../assests/images/fragrancesDropDownImage2.webp" width="500" /></div>
           </div>
-
         </li>
-        <!--Fragrances  DropDown End-->
-        <!---mens Dropdown Start-->
+
+        <!-- MENS Dropdown -->
         <li class="dropdown-wrapper">
           <a href="#">MENS</a>
-           <div class="dropdown" id="mens-dropdown">
+          <div class="dropdown" id="mens-dropdown">
             <div class="dropdown-column" style="min-width:100px;">
-                <h6>SHOP BY CATEGORY</h6>
-                <div class="dropdown-list">
-                  <a href="#">UNSTITCHED</a>
-                  <a href="#">Ready to Wear</a>
-                  <a href="#">Fragrance</a>
-                </div>
+              <h6>SHOP BY CATEGORY</h6>
+              <div class="dropdown-list">
+                <a href="#">UNSTITCHED</a>
+                <a href="#">Ready to Wear</a>
+                <a href="#">Fragrance</a>
               </div>
+            </div>
             <div class="dropdown-column">
-                <h6>SHOP BY STYLE</h6>
-                <div class="dropdown-list" style="min-width: 100px;">
-                  <a href="#">Kurta Shalwar</a>
-                  <a href="#">Shalwar Suit</a>
-                  <a href="#">Kurta Trouser</a>
-                  <a href="#">Waist Coat</a>
-                  <a href="#">Shalwar</a>
-                </div>
+              <h6>SHOP BY STYLE</h6>
+              <div class="dropdown-list" style="min-width: 100px;">
+                <a href="#">Kurta Shalwar</a>
+                <a href="#">Shalwar Suit</a>
+                <a href="#">Kurta Trouser</a>
+                <a href="#">Waist Coat</a>
+                <a href="#">Shalwar</a>
+              </div>
             </div>
             <div class="dropdown-column" style="min-width:100px;">
-                <h6>SHOP BY FABRICS</h6>
-                <div class="dropdown-list">
-                  <a href="#">  Blended</a>
-                  <a href="#">Cotton</a>
-                </div>
+              <h6>SHOP BY FABRICS</h6>
+              <div class="dropdown-list">
+                <a href="#">Blended</a>
+                <a href="#">Cotton</a>
+              </div>
             </div>
-            <div class="dropdown-image" style="margin-right:10px;"><img src="../assests/images//menDrpDownImage1.webp" width="300" /></div>
-            <div class="dropdown-image"><img src="../assests/images//menDropDowmImage2.webp" width="300" /></div>
-        </div>
+            <div class="dropdown-image" style="margin-right:10px;"><img src="../assests/images/menDrpDownImage1.webp" width="300" /></div>
+            <div class="dropdown-image"><img src="../assests/images/menDropDowmImage2.webp" width="300" /></div>
+          </div>
         </li>
-        <!---Men Drop Down End-->
-        <!--Kids PRET Drop Down Start-->
+
+        <!-- KIDS PRET Dropdown -->
         <li class="dropdown-wrapper">
           <a href="#">KIDS PRET</a>
           <div class="dropdown" id="kid-pret-dropdown">
-               <div class="dropdown-image"><img src="../assests/images//kidsPretImage1.webp" width="230" /></div>
-               <div class="dropdown-image"><img src="../assests/images//KidsPretImage2.webp" width="230" /></div>
+            <div class="dropdown-image"><img src="../assests/images/kidsPretImage1.webp" width="230" /></div>
+            <div class="dropdown-image"><img src="../assests/images/KidsPretImage2.webp" width="230" /></div>
           </div>
         </li>
-        <!--Kid Pret Drop Down End-->
-        <!-- Static Nav Links End -->
+
       </ul>
     </nav>
-    <!-- Navbar End -->
   </header>
   <!-- ========== HEADER END ========== -->
 
-  <!-- ========== SEARCH RESULTS SECTION (hidden by default) ========== -->
-  <!--  This section only appears when user types in the search bar -->
+  <!-- ========== SEARCH RESULTS SECTION ========== -->
   <section id="search-results-section" style="display:none;">
     <div class="custom-container">
       <div class="search-results-header">
         <h2>Results for <span id="search-query-label"></span></h2>
-        <button id="clear-search-btn" onclick="document.getElementById('search').value=''; document.getElementById('search').dispatchEvent(new Event('input'));">
+        <button id="clear-search-btn">
           <i class="bi bi-x-lg"></i> Clear search
         </button>
       </div>
@@ -346,28 +324,27 @@
   </section>
   <!-- ========== SEARCH RESULTS SECTION END ========== -->
 
-
   <!-- ========== MAIN START ========== -->
-  
+  <!-- FIX: id="main-content" added so JS can hide/show the page when searching -->
+  <div id="main-content">
 
-    <!-- Hero Section Start -->
+    <!-- Hero Section -->
     <section class="hero-section">
-    <swiper-container class="mySwiper"  space-between="30" navigation="true"
-     autoplay-delay="2500" autoplay-disable-on-interaction="true" free-mode="true">
-    <swiper-slide><img src="../assests/images/heroImage1.jpeg"></swiper-slide>
-    <swiper-slide><img src="../assests/images/heroImage2.jpeg"></swiper-slide>
-    <swiper-slide><img src="../assests/images/heroImage3.jpeg"></swiper-slide>
-    <swiper-slide><img src="../assests/images/heroImage4.jpeg"></swiper-slide>
-    <swiper-slide><img src="../assests/images/heroImage5.jpeg"></swiper-slide>
-    <swiper-slide><img src="../assests/images/heroImage6.jpeg"></swiper-slide>
-    <swiper-slide><img src="../assests/images/HeroBanner_Web_7.webp"></swiper-slide>
-    <swiper-slide><img src="../assests/images/heroImage7.webp"></swiper-slide>
-   
-  </swiper-container>
+      <swiper-container class="mySwiper" space-between="30" navigation="true"
+        autoplay-delay="2500" autoplay-disable-on-interaction="true" free-mode="true">
+        <swiper-slide><img src="../assests/images/heroImage1.jpeg"></swiper-slide>
+        <swiper-slide><img src="../assests/images/heroImage2.jpeg"></swiper-slide>
+        <swiper-slide><img src="../assests/images/heroImage3.jpeg"></swiper-slide>
+        <swiper-slide><img src="../assests/images/heroImage4.jpeg"></swiper-slide>
+        <swiper-slide><img src="../assests/images/heroImage5.jpeg"></swiper-slide>
+        <swiper-slide><img src="../assests/images/heroImage6.jpeg"></swiper-slide>
+        <swiper-slide><img src="../assests/images/HeroBanner_Web_7.webp"></swiper-slide>
+        <swiper-slide><img src="../assests/images/heroImage7.webp"></swiper-slide>
+      </swiper-container>
     </section>
-    <!-- Hero Section End -->
 
-    <!-- Latest Arrival Section Start -->
+    <!-- Latest Arrivals Section -->
+    <!-- FIX: added class="product-card" to every swiper-slide that has a product -->
     <section class="latest-arrival-section">
       <div class="custom-container">
         <h1 class="text-center">LATEST ARRIVALS</h1>
@@ -383,83 +360,91 @@
           <div class="new-arrival-category">
             <img src="../assests/images/New_Arrival_Section.webp" alt="">
           </div>
-          <!--New Arrival Swipper start-->
           <div class="new-arrival-swipper-container">
-               <swiper-container class="mySwiper" space-between="30" navigation="true"
-                 autoplay-delay="2000" autoplay-disable-on-interaction="false" id="new-arrival-swipper" init="false">
-               <swiper-slide><img src="../assests/images/new-arrival-tessa.webp" alt="" srcset="">
+            <swiper-container class="mySwiper" space-between="30" navigation="true"
+              autoplay-delay="2000" autoplay-disable-on-interaction="false"
+              id="new-arrival-swipper" init="false">
+
+              <swiper-slide class="product-card">
+                <img src="../assests/images/new-arrival-tessa.webp" alt="">
                 <p class="sale-banner">sale 20%</p>
                 <div class="swipper-body">
-                    <p>unstitched</p>
-                    <h2>Tessa - 3 Pc (WUS25E3095)</h2>
-                    <span class="old-price">PKR 10,990</span>
-                    <span class="new-price">PKR 8000</span>
-                </div>
-               </swiper-slide>
-               <swiper-slide>
-                <img src="../assests/images/new-arrival-whishling.webp" alt="" srcset="">
-                <p class="sale-banner">sale 20%</p>
-                <div class="swipper-body">
-                    <p>unstitched</p>
-                     <h2>Whistling-2 Pc (WUS25PST2085)</h2>
-                    <span class="old-price">PKR 3,090</span>
-                    <span class="new-price">PKR 27,99</span>
+                  <p class="product-category">Unstitched</p>
+                  <h2>Tessa - 3 Pc (WUS25E3095)</h2>
+                  <span class="old-price">PKR 10,990</span>
+                  <span class="new-price">PKR 8,000</span>
                 </div>
               </swiper-slide>
-               <swiper-slide>
-                <img src="../assests/images/new-arrival-evara.webp" alt="" srcset="">
+
+              <swiper-slide class="product-card">
+                <img src="../assests/images/new-arrival-whishling.webp" alt="">
                 <p class="sale-banner">sale 20%</p>
                 <div class="swipper-body">
-                    <p>unstitched</p>
-                     <h2>Evara-2 Pc (WUS25PST2080)</h2>
-                    <span class="old-price">PKR 3,090</span>
-                    <span class="new-price">PKR 24,72</span>
+                  <p class="product-category">Unstitched</p>
+                  <h2>Whistling - 2 Pc (WUS25PST2085)</h2>
+                  <span class="old-price">PKR 3,090</span>
+                  <span class="new-price">PKR 2,799</span>
                 </div>
-               </swiper-slide>
-               <swiper-slide>
-                <img src="../assests/images/new-arrival-misty.webp" alt="" srcset="">
+              </swiper-slide>
+
+              <swiper-slide class="product-card">
+                <img src="../assests/images/new-arrival-evara.webp" alt="">
                 <p class="sale-banner">sale 20%</p>
                 <div class="swipper-body">
-                    <p>unstitched</p>
-                    <h2>Misty-3 Pc (WU3PPBS25LIUN62)</h2>
-                    <span class="old-price">PKR 3,890</span>
-                    <span class="new-price">PKR 3,112</span>
+                  <p class="product-category">Unstitched</p>
+                  <h2>Evara - 2 Pc (WUS25PST2080)</h2>
+                  <span class="old-price">PKR 3,090</span>
+                  <span class="new-price">PKR 2,472</span>
                 </div>
-               </swiper-slide>
-               <swiper-slide>
-                <img src="../assests/images/new-arrival-malhar.webp" alt="" srcset="">
+              </swiper-slide>
+
+              <swiper-slide class="product-card">
+                <img src="../assests/images/new-arrival-misty.webp" alt="">
+                <p class="sale-banner">sale 20%</p>
                 <div class="swipper-body">
-                    <p>unstitched</p>
-                    <h2>Malhaar - 3 Pc (WUS25DE3063)</h2>
-                    <span class="price">PKR 8,990</span>
+                  <p class="product-category">Unstitched</p>
+                  <h2>Misty - 3 Pc (WU3PPBS25LIUN62)</h2>
+                  <span class="old-price">PKR 3,890</span>
+                  <span class="new-price">PKR 3,112</span>
                 </div>
-               </swiper-slide>
-              
-              <swiper-slide>
-               <img src="../assests/images/new-arrival-malhaar.webp" alt="" srcset="">
-               <div class="swipper-body">
-                   <p>unstitched</p>
-                   <h2>Malhaar - 3 Pc (WUS25DE3085)</h2>
-                   <span class="price">PKR 10,990</span>
-               </div>
               </swiper-slide>
-              <swiper-slide>
-               <img src="../assests/images/new-arrival-gulal.webp" alt="" srcset="">
-               <div class="swipper-body">
-                   <p>unstitched</p>
-                   <h2>Gulaal - 3 Pc (WUS25E3094)</h2>
-                   <span class="new-price">PKR 10,990</span>
-               </div>
+
+              <swiper-slide class="product-card">
+                <img src="../assests/images/new-arrival-malhar.webp" alt="">
+                <div class="swipper-body">
+                  <p class="product-category">Unstitched</p>
+                  <h2>Malhaar - 3 Pc (WUS25DE3063)</h2>
+                  <span class="price">PKR 8,990</span>
+                </div>
               </swiper-slide>
-        </swiper-container>      
+
+              <swiper-slide class="product-card">
+                <img src="../assests/images/new-arrival-malhaar.webp" alt="">
+                <div class="swipper-body">
+                  <p class="product-category">Unstitched</p>
+                  <h2>Malhaar - 3 Pc (WUS25DE3085)</h2>
+                  <span class="price">PKR 10,990</span>
+                </div>
+              </swiper-slide>
+
+              <swiper-slide class="product-card">
+                <img src="../assests/images/new-arrival-gulal.webp" alt="">
+                <div class="swipper-body">
+                  <p class="product-category">Unstitched</p>
+                  <h2>Gulaal - 3 Pc (WUS25E3094)</h2>
+                  <span class="price">PKR 10,990</span>
+                </div>
+              </swiper-slide>
+
+            </swiper-container>
+          </div>
         </div>
       </div>
-      </div>
     </section>
-    <!-- Latest Arrival Section End -->
-    <!-----Category Section------->
+
+    <!-- Category Section -->
     <section>
-      <div class="custom-container"  id="category-section">
+      <div class="custom-container" id="category-section">
         <div class="category-wrapper">
           <div class="category-item">
             <img src="../assests/images/CategoryTite_1.webp">
@@ -467,30 +452,30 @@
           <div class="category-item">
             <img src="../assests/images/CategoryTitle_2.webp" alt="">
             <div class="description-container">
-                 <p>Unstitched</p>
-                  <h1>2 Piece</h1>
-                </div>
+              <p>Unstitched</p>
+              <h1>2 Piece</h1>
+            </div>
           </div>
           <div class="category-item">
             <img src="../assests/images/CategoryTite_3.webp" alt="">
             <div class="description-container">
-                  <p>Ready To Wear</p>
-                  <h1>3 Piece</h1>
-                </div>
+              <p>Ready To Wear</p>
+              <h1>3 Piece</h1>
+            </div>
           </div>
           <div class="category-item">
             <img src="../assests/images/CategoryTitle_4.webp">
             <div class="description-container">
-                  <p>Ready To Wear</p>
-                  <h1>Embroided</h1>
-                </div>
+              <p>Ready To Wear</p>
+              <h1>Embroided</h1>
+            </div>
           </div>
           <div class="category-item responsive-category-item">
             <img src="../assests/images/CategoryTitle_5.webp" alt="">
             <div class="description-container">
-                  <p>Ready To Wear</p>
-                  <h1>Printed</h1>
-                </div>
+              <p>Ready To Wear</p>
+              <h1>Printed</h1>
+            </div>
           </div>
           <div class="category-item responsive-category-item">
             <img src="../assests/images/CategoryTiles_6.webp" alt="">
@@ -498,321 +483,287 @@
         </div>
       </div>
     </section>
-    <!--======= Category Section End =======-->
-    <!---====== Fragrances and Beauty Section Start ========-->
+
+    <!-- Fragrances Section -->
     <section>
-          <div id="fragrance-section">
-            <div id="fragrance-main" class="fragrance-items">
-                <img src="../assests/images/commonSectionImage1.webp"/>
-                <div class="description-container">
-                  <h1>Fragrance</h1>
-                  <a href="#">Shop Now</a>
-                </div>
+      <div id="fragrance-section">
+        <div id="fragrance-main" class="fragrance-items">
+          <img src="../assests/images/commonSectionImage1.webp" />
+          <div class="description-container">
+            <h1>Fragrance</h1>
+            <a href="#">Shop Now</a>
+          </div>
+        </div>
+        <div class="fragrance-items fragrance-beauty-section-swipper">
+          <swiper-container class="mySwiper" autoplay-delay="2500" free-mode="true">
+
+            <swiper-slide class="product-card">
+              <img src="../assests/images/fragranceSwiperImage1.webp" alt="">
+              <div class="swipper-body">
+                <p class="product-category">Fragrance</p>
+                <h2>NOTORIOUS (100 ML)</h2>
+                <span class="old-price">PKR 3,890</span>
+                <span class="new-price" style="color:red">PKR 1,440</span>
               </div>
-            <!----========Fragrance Swipper Start=======-->
-             <div class="fragrance-items fragrance-beauty-section-swipper" >
-                <swiper-container class="mySwiper" autoplay-delay="2500" id-="fragrance-swipper"  free-mode="true">
-                      <swiper-slide>
-                        <img src="../assests/images/fragranceSwiperImage1.webp" alt="">
-                        <div class="swipper-body">
-                         <p>Fragrance</p>
-                         <h2>NOTORIOUS (100 ML)</h2>
-                         <span class="old-price" >PKR 3,890</span>
-                         <span class="price" style="color:red">PKR 1,440</span>
-                        </div>
-                      </swiper-slide>
-                      <swiper-slide>
-                        <img src="../assests/images/fragranceSwiperImage2.webp" alt="">
-                        <div class="swipper-body">
-                         <p>Fragrance</p>
-                         <h2>Mystic Blue - (100 Ml)</h2>
-                         <span class="price">PKR 4,880</span>
-                        </div>
-                      </swiper-slide>
-                      <swiper-slide>
-                        <img src="../assests/images/fragranceSwiperImage3.webp" alt="">
-                        <div class="swipper-body">
-                         <p>Fragrance</p>
-                         <h2>Rodeo Gold - (100 Ml)</h2>
-                         
-                         <span class="price">PKR 3,112</span>
-                        </div>
-                      </swiper-slide>
-                      <swiper-slide>
-                        <img src="../assests/images/fragranceSwiperImage4.webp" alt="">
-                        <div class="swipper-body">
-                         <p>Fragrance</p>
-                         <h2>Eternal Twilight - (100 ML)</h2>
-                         <span class="price">PKR 3,112</span>
-                        </div>
-                      </swiper-slide>
-                     
-                 </swiper-container>
-            </div>
-            </div>
-            <!---=========Fragrance Swipper End=======-->
-    </section>        
-            <!-----=====Beauty Section Start============-->
-    <section>  
-      <div id="beauty-section">
-            <div  class="beauty-items  fragrance-beauty-section-swipper" >
-              <!------=======Beauty Section Swipper Start==========-->
-               <swiper-container class="mySwiper" autoplay-delay="2500" free-mode="true" id="beauty-swipper">
-                      <swiper-slide>
-                        <img src="../assests/images/beautySectionSwipperImage1.webp" alt="">
-                        <div class="swipper-body">
-                         <p>Beauty</p>
-                         <h2>SKIN TWIN COVER FOUNDATION </h2>
-                         <span class="price" >PKR 3,890</span>
-                        </div>
-                      </swiper-slide>
-                      <swiper-slide>
-                        <img src="../assests/images/beautySectionSwipperImage2.webp" alt="">
-                        <div class="swipper-body">
-                         <p>Beauty</p>
-                         <h2>Super Match 24H Foundation</h2>
-                         <span class="price">PKR 4,380</span>
-                        </div>
-                      </swiper-slide>
-                      <swiper-slide>
-                        <img src="../assests/images/beautySwipperSectionImage3.webp" alt="">
-                        <div class="swipper-body">
-                         <p>Beauty</p>
-                          <h2>SKIN EDITOR PRIME BASE</h2>
-                         <span class="price">PKR 3,112</span>
-                        </div>
-                      </swiper-slide>
-                      <swiper-slide>
-                        <img src="../assests/images/beautySectionSwipperImage4.webp" alt="">
-                        <div class="swipper-body">
-                         <p>Beauty</p>
-                         <h2>SKIN TWIN COVER FOUNDATION</h2>
-                         <span class="price">PKR 3,112</span>
-                        </div>
-                      </swiper-slide>
-                     
-                 </swiper-container>
-            </div>
-            <div id ="beauty-main" class="beauty-items">
-              <img src="../assests/images/fashionsectionBeautyImage.webp"/>
-              <div class="description-container">
-                  <h1>Beauty</h1>
-                  <a href="#">Shop Now</a>
-                </div>
-            </div>
-      </div>  
+            </swiper-slide>
+
+            <swiper-slide class="product-card">
+              <img src="../assests/images/fragranceSwiperImage2.webp" alt="">
+              <div class="swipper-body">
+                <p class="product-category">Fragrance</p>
+                <h2>Mystic Blue - (100 Ml)</h2>
+                <span class="price">PKR 4,880</span>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide class="product-card">
+              <img src="../assests/images/fragranceSwiperImage3.webp" alt="">
+              <div class="swipper-body">
+                <p class="product-category">Fragrance</p>
+                <h2>Rodeo Gold - (100 Ml)</h2>
+                <span class="price">PKR 3,112</span>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide class="product-card">
+              <img src="../assests/images/fragranceSwiperImage4.webp" alt="">
+              <div class="swipper-body">
+                <p class="product-category">Fragrance</p>
+                <h2>Eternal Twilight - (100 ML)</h2>
+                <span class="price">PKR 3,112</span>
+              </div>
+            </swiper-slide>
+
+          </swiper-container>
+        </div>
+      </div>
     </section>
-    <!------=========Beauty Secion End==============-->
-    <!---=============MensWare Secction start=================------>
+
+    <!-- Beauty Section -->
+    <section>
+      <div id="beauty-section">
+        <div class="beauty-items fragrance-beauty-section-swipper">
+          <swiper-container class="mySwiper" autoplay-delay="2500" free-mode="true" id="beauty-swipper">
+
+            <swiper-slide class="product-card">
+              <img src="../assests/images/beautySectionSwipperImage1.webp" alt="">
+              <div class="swipper-body">
+                <p class="product-category">Beauty</p>
+                <h2>SKIN TWIN COVER FOUNDATION</h2>
+                <span class="price">PKR 3,890</span>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide class="product-card">
+              <img src="../assests/images/beautySectionSwipperImage2.webp" alt="">
+              <div class="swipper-body">
+                <p class="product-category">Beauty</p>
+                <h2>Super Match 24H Foundation</h2>
+                <span class="price">PKR 4,380</span>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide class="product-card">
+              <img src="../assests/images/beautySwipperSectionImage3.webp" alt="">
+              <div class="swipper-body">
+                <p class="product-category">Beauty</p>
+                <h2>SKIN EDITOR PRIME BASE</h2>
+                <span class="price">PKR 3,112</span>
+              </div>
+            </swiper-slide>
+
+            <swiper-slide class="product-card">
+              <img src="../assests/images/beautySectionSwipperImage4.webp" alt="">
+              <div class="swipper-body">
+                <p class="product-category">Beauty</p>
+                <h2>SKIN TWIN COVER FOUNDATION</h2>
+                <span class="price">PKR 3,112</span>
+              </div>
+            </swiper-slide>
+
+          </swiper-container>
+        </div>
+        <div id="beauty-main" class="beauty-items">
+          <img src="../assests/images/fashionsectionBeautyImage.webp" />
+          <div class="description-container">
+            <h1>Beauty</h1>
+            <a href="#">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mens Ware Section -->
     <section>
       <div id="mensware-section">
-       <swiper-container class="mySwiper" navigation="true" autoplay-delay="3000">
+        <swiper-container class="mySwiper" navigation="true" autoplay-delay="3000">
           <swiper-slide>
             <img src="../assests/images/Men_s_Section_Banner-Image1.webp" srcset="">
           </swiper-slide>
           <swiper-slide>
             <img src="../assests/images/Men_s_Section_Banner_Image2.webp" alt="">
           </swiper-slide>
-      </swiper-container>
-         <div class="mensware-section-category">
-           <span>Stitched</span>
-           <span>Unstitched</span>
-         </div>
+        </swiper-container>
+        <div class="mensware-section-category">
+          <span>Stitched</span>
+          <span>Unstitched</span>
+        </div>
       </div>
-    </section>  
-    <!----========= MensWare Section End ===========-->
+    </section>
+
+    <!-- Social Media Section -->
     <section>
       <div id="social-media-section">
         <div class="social-media-section-wrapper">
-         <h1>Follow us on Instagram</h1>
-         <div class="social-media-links">
-            <a href="@bonanzaofficial">@bonanzaofficial</a>
-             <a href="@bonanzasatrangibeauty">@bonanzasatrangibeauty</a>
-         </div>
+          <h1>Follow us on Instagram</h1>
+          <div class="social-media-links">
+            <a href="#">@bonanzaofficial</a>
+            <a href="#">@bonanzasatrangibeauty</a>
+          </div>
+        </div>
+        <div class="social-media-swipper-container">
+          <swiper-container class="mySwiper" init="true" id="social-media-swipper" space-between="40" autoplay-delay="2500">
+            <swiper-slide>
+              <video autoplay loop muted playsinline>
+                <source src="../assests/videos/social-media-section-v1.mp4">
+              </video>
+            </swiper-slide>
+            <swiper-slide>
+              <video autoplay loop muted playsinline>
+                <source src="../assests/videos/social-media-section-v2.mp4">
+              </video>
+            </swiper-slide>
+            <swiper-slide>
+              <video autoplay loop muted playsinline>
+                <source src="../assests/videos/social-media-section-v3.mp4">
+              </video>
+            </swiper-slide>
+            <swiper-slide>
+              <video autoplay loop muted playsinline>
+                <source src="../assests/videos/social-media-section-v4.mp4">
+              </video>
+            </swiper-slide>
+            <swiper-slide>
+              <video autoplay loop muted playsinline>
+                <source src="../assests/videos/social-media-section-v5.mp4">
+              </video>
+            </swiper-slide>
+          </swiper-container>
+        </div>
       </div>
-      <div class="social-media-swipper-container">
-      <swiper-container class="mySwiper" init="true" id="social-media-swipper" space-between="40" autoplay-delay="2500" >
-    <swiper-slide>
-      <video autoplay loop infinite muted>
-        <source src="../assests/videos/social-media-section-v1.mp4 ">
-      </video>
-    </swiper-slide>
-    
-    <swiper-slide>
-      <video autoplay loop infinite muted>
-        <source src="../assests/videos/social-media-section-v2.mp4 ">
-      </video>
-    </swiper-slide>
-    <swiper-slide>
-      <video autoplay loop infinite muted>
-        <source src="../assests/videos/social-media-section-v3.mp4 ">
-      </video>
-    </swiper-slide>
-    <swiper-slide>
-      <video autoplay loop infinite muted>
-        <source src="../assests/videos/social-media-section-v4.mp4 ">
-      </video>
-    </swiper-slide>
-    <swiper-slide>
-      <video autoplay loop infinite muted>
-        <source src="../assests/videos/social-media-section-v5.mp4 ">
-      </video>
-    </swiper-slide>
-       </swiper-container>
-     </div>  
-     </div>
     </section>
-    <!-- =========Social Media Section Start========= -->
-  </main>
-  <!-- ========== MAIN END ========== -->
 
-
+  </div>
+  <!-- ========== MAIN END (id="main-content" closes here) ========== -->
 
   <!-- ========== FOOTER START ========== -->
-    
-    <footer class="footer">
-  <div class="footer-top">
-    <div class="footer-col contact-column">
-      <h4>CONTACT US</h4>
-      <ul>
-        <li><i class="fas fa-phone"></i> +92 21 111-244-266</li>
-        <li><i class="fas fa-envelope"></i> info@bonanzasatrangi.com</li>
-        <li><i class="fas fa-user-clock"></i>
-                  <span>Customer Service
-                   <br>     Monday - Saturday:<br> 9:30 AM – 10:00 PM PKT <br>
-                            Sunday:<br> 11:00 AM – 8:00 PM PKT </span>  </li>
-      </ul>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col contact-column">
+        <h4>CONTACT US</h4>
+        <ul>
+          <li><i class="fas fa-phone"></i> +92 21 111-244-266</li>
+          <li><i class="fas fa-envelope"></i> info@bonanzasatrangi.com</li>
+          <li>
+            <i class="fas fa-user-clock"></i>
+            <span>Customer Service<br>
+              Monday - Saturday:<br> 9:30 AM – 10:00 PM PKT<br>
+              Sunday:<br> 11:00 AM – 8:00 PM PKT
+            </span>
+          </li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Track Your Order</a></li>
+          <li><a href="#">Shipping Information</a></li>
+          <li><a href="#">Store Locator</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>CUSTOMER CARE</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Return & Exchange Policy</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col newsletter-col">
+        <h4>NEWSLETTER SIGN UP</h4>
+        <p>Sign up to stay in the loop. Receive updates, access to exclusive deals and more.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter Email" required>
+          <button type="submit"><i class="fas fa-arrow-right"></i></button>
+        </form>
       </div>
     </div>
-
-    <div class="footer-col">
-      <h4>INFORMATION</h4>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Track Your Order</a></li>
-        <li><a href="#">Shipping Information</a></li>
-        <li><a href="#">Store Locator</a></li>
-        <li><a href="#">Terms of Service</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>Powered By SIAR</p>
     </div>
-
-    <div class="footer-col">
-      <h4>CUSTOMER CARE</h4>
-      <ul>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Return & Exchange Policy</a></li>
-        <li><a href="#">FAQs</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-col newsletter-col">
-      <h4>NEWSLETTER SIGN UP</h4>
-      <p>Sign up to stay in the loop. Receive updates, access to exclusive deals and more.</p>
-      <form class="newsletter-form">
-        <input type="email" placeholder="Enter Email" required>
-        <button type="submit"><i class="fas fa-arrow-right"></i></button>
-      </form>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>Powered By SIAR</p>
-  </div>
-</footer>
-
- 
+  </footer>
   <!-- ========== FOOTER END ========== -->
 
-
-  <!--========Swipper Js======-->
+  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-  
+
   <script>
-    const swiperEl = document.getElementById('new-arrival-swipper')
+    // New Arrivals Swiper
+    const swiperEl = document.getElementById('new-arrival-swipper');
     Object.assign(swiperEl, {
       slidesPerView: 1,
       spaceBetween: 10,
-      pagination: {
-        clickable: true,
-      },
+      pagination: { clickable: true },
       breakpoints: {
-        300: {
-          slidesPerView:2,
-          spaceBetween: 20,
-        },
-        650: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
+        300:  { slidesPerView: 2, spaceBetween: 20 },
+        650:  { slidesPerView: 2, spaceBetween: 40 },
+        1024: { slidesPerView: 3, spaceBetween: 40 },
       },
     });
     swiperEl.initialize();
-    const swiperElements = document.querySelectorAll('.fragrance-beauty-section-swipper swiper-container');
 
- swiperElements.forEach(swiperEl => {
-  Object.assign(swiperEl, {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    pagination: {
-      clickable: true,
-    },
-    breakpoints: {
-      300:{
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      649:{
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      890:{
-        slidesPerView: 2,
-        spaceBetween: 40,
-      },
-      1024: {
-        slidesPerView: 2,
-        spaceBetween: 40,
-      },
-    },
-  });
-  swiperEl.initialize();
-});
+    // Fragrance & Beauty Swipers
+    document.querySelectorAll('.fragrance-beauty-section-swipper swiper-container').forEach(el => {
+      Object.assign(el, {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: { clickable: true },
+        breakpoints: {
+          300:  { slidesPerView: 2, spaceBetween: 20 },
+          649:  { slidesPerView: 2, spaceBetween: 20 },
+          890:  { slidesPerView: 2, spaceBetween: 40 },
+          1024: { slidesPerView: 2, spaceBetween: 40 },
+        },
+      });
+      el.initialize();
+    });
 
-
-  const swiperE2 = document.getElementById('social-media-swipper')
+    // Social Media Swiper
+    const swiperE2 = document.getElementById('social-media-swipper');
     Object.assign(swiperE2, {
       slidesPerView: 1,
       spaceBetween: 10,
-      pagination: {
-        clickable: true,
-      },
+      pagination: { clickable: true },
       breakpoints: {
-        300: {
-          slidesPerView:2,
-          spaceBetween: 20,
-        },
-        650: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 5,
-          spaceBetween: 40,
-        },
+        300:  { slidesPerView: 2, spaceBetween: 20 },
+        650:  { slidesPerView: 3, spaceBetween: 40 },
+        1024: { slidesPerView: 5, spaceBetween: 40 },
       },
     });
-   swiperE2.initialize();
-
+    swiperE2.initialize();
   </script>
-   <script src="../js/script.js"></script>
+
+  <script src="../js/script.js"></script>
 </body>
 </html>
