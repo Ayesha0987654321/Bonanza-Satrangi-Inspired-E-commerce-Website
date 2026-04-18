@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bonanza Satrangi2</title>
+  <title>Bonanza Satrangi</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!----styel sheet link-->
-  <link rel="stylesheet" href="../css/style2.css" />
+  <link rel="stylesheet" href="../css/style.css" />
   <!---bootstarp icons cdn-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <!------font Awesome icons cdn------->
@@ -23,6 +23,7 @@
   <!-- ========== HEADER START ========== -->
   <header>
     <!-- News Ticker Start -->
+
     <div class="news_ticker">
       <p>This is the official Bonanza Satrangi website</p>
     </div>
@@ -30,6 +31,10 @@
 
     <!-- Main Header Start -->
     <div class="main-header custom-container">
+    <button class="menu-toggle" onClick="document.querySelector('.nav-list').classList.toggle('active')">
+      &#9776;
+    </button>
+
       <div class="logo-section">
         <div class="logo">
           <img src="../assests/images//Group_11.svg" alt="logo" />
@@ -60,10 +65,12 @@
     <!-- Navbar Start -->
     <nav class="navbar">
       <ul class="nav-list">
+            <button class="close-btn" onclick="document.querySelector('.nav-list').classList.remove('active')">✖</button>
+
         <!-- SALE Dropdown Start -->
         <li class="dropdown-wrapper">
-          <a href="#">SALE</a>
-          <div class="dropdown sale-dropdown" style="width:60vw; left:180px">
+          <a href="sale.html">SALE</a>
+          <div class="dropdown" id="sale-dropdown" style="width:70vw;">
               <div class="dropdown-column">
                 <h6>Shop by Category</h6>
                 <div class="dropdown-list">
@@ -82,8 +89,8 @@
 
         <!-- NEW ARRIVALS Dropdown Start -->
         <li class="dropdown-wrapper">
-          <a href="#">NEW ARRIVALS</a>
-          <div class="dropdown arrival-dropdown">
+          <a href="newArrival.html">NEW ARRIVALS</a>
+          <div class="dropdown" id="arrival-dropdown">
               <div class="dropdown-column">
                 <h6>Shop by Category</h6>
                 <div class="dropdown-list">
@@ -115,8 +122,8 @@
 
         <!-- Ready TO wear Start -->
         <li class="dropdown-wrapper">
-          <a href="#">READY TO WEAR</a>
-          <div class="dropdown">
+          <a href="readyToWear.html">READY TO WEAR</a>
+          <div class="dropdown" id="ready-to-wear-dropdown">
             <div class="dropdown-column">
                 <h6>SHOP BY CATEGORY</h6>
                 <div class="dropdown-list">
@@ -157,7 +164,7 @@
         <!----Unstitched Drop Down Start-->
         <li class="dropdown-wrapper">
           <a href="#">UNSTITCHED</a>
-           <div class="dropdown">
+           <div class="dropdown" id="unstitched-dropdown">
             <div class="dropdown-column">
                 <h6>SHOP BY CATEGORY</h6>
                 <div class="dropdown-list">
@@ -239,8 +246,8 @@
                    <a style="text-decoration: underline; font-weight: bold;">View All</a>
                 </div>
               </div>
-              <div class="dropdown-image"><img src="../assests/images//beutyDropDownImage1.webp" width="200" /></div>
-              <div class="dropdown-image"><img src="../assests/images//beautyDropDownImage2.webp" width="200" /></div>
+              <div class="dropdown-image"><img src="../assests/images//beutyDropDownImage1.webp" width="180" /></div>
+              <div class="dropdown-image"><img src="../assests/images//beautyDropDownImage2.webp" width="180" /></div>
           </div>
         </li>
         <!---Beauty Drop Down End-->
@@ -274,7 +281,7 @@
         <!---mens Dropdown Start-->
         <li class="dropdown-wrapper">
           <a href="#">MENS</a>
-           <div class="dropdown" style="width:90vw; left:80px">
+           <div class="dropdown" id="mens-dropdown">
             <div class="dropdown-column" style="min-width:100px;">
                 <h6>SHOP BY CATEGORY</h6>
                 <div class="dropdown-list">
@@ -309,8 +316,8 @@
         <li class="dropdown-wrapper">
           <a href="#">KIDS PRET</a>
           <div class="dropdown" id="kid-pret-dropdown">
-               <div class="dropdown-image"><img src="../assests/images//kidsPretImage1.webp" width="240" /></div>
-               <div class="dropdown-image"><img src="../assests/images//KidsPretImage2.webp" width="240" /></div>
+               <div class="dropdown-image"><img src="../assests/images//kidsPretImage1.webp" width="230" /></div>
+               <div class="dropdown-image"><img src="../assests/images//KidsPretImage2.webp" width="230" /></div>
           </div>
         </li>
         <!--Kid Pret Drop Down End-->
@@ -320,6 +327,25 @@
     <!-- Navbar End -->
   </header>
   <!-- ========== HEADER END ========== -->
+
+  <!-- ========== SEARCH RESULTS SECTION (hidden by default) ========== -->
+  <!--  This section only appears when user types in the search bar -->
+  <section id="search-results-section" style="display:none;">
+    <div class="custom-container">
+      <div class="search-results-header">
+        <h2>Results for <span id="search-query-label"></span></h2>
+        <button id="clear-search-btn" onclick="document.getElementById('search').value=''; document.getElementById('search').dispatchEvent(new Event('input'));">
+          <i class="bi bi-x-lg"></i> Clear search
+        </button>
+      </div>
+      <p id="no-results-msg" style="display:none; padding: 40px 0; color:#666; font-size:14px;">
+        No products matched your search. Try a different term.
+      </p>
+      <div id="search-results-grid"></div>
+    </div>
+  </section>
+  <!-- ========== SEARCH RESULTS SECTION END ========== -->
+
 
   <!-- ========== MAIN START ========== -->
   
@@ -448,25 +474,25 @@
           <div class="category-item">
             <img src="../assests/images/CategoryTite_3.webp" alt="">
             <div class="description-container">
-                  <p>Unstitched</p>
+                  <p>Ready To Wear</p>
                   <h1>3 Piece</h1>
                 </div>
           </div>
           <div class="category-item">
             <img src="../assests/images/CategoryTitle_4.webp">
             <div class="description-container">
-                  <p>Unstitched</p>
+                  <p>Ready To Wear</p>
                   <h1>Embroided</h1>
                 </div>
           </div>
-          <div class="category-item">
+          <div class="category-item responsive-category-item">
             <img src="../assests/images/CategoryTitle_5.webp" alt="">
             <div class="description-container">
                   <p>Ready To Wear</p>
                   <h1>Printed</h1>
                 </div>
           </div>
-          <div class="category-item">
+          <div class="category-item responsive-category-item">
             <img src="../assests/images/CategoryTiles_6.webp" alt="">
           </div>
         </div>
@@ -485,7 +511,7 @@
               </div>
             <!----========Fragrance Swipper Start=======-->
              <div class="fragrance-items fragrance-beauty-section-swipper" >
-                <swiper-container class="mySwiper" autoplay-delay="2500" slides-per-view="2"  space-between="20" free-mode="true">
+                <swiper-container class="mySwiper" autoplay-delay="2500" id-="fragrance-swipper"  free-mode="true">
                       <swiper-slide>
                         <img src="../assests/images/fragranceSwiperImage1.webp" alt="">
                         <div class="swipper-body">
@@ -529,9 +555,9 @@
             <!-----=====Beauty Section Start============-->
     <section>  
       <div id="beauty-section">
-            <div  class="beauty-items  fragrance-beauty-section-swipper">
+            <div  class="beauty-items  fragrance-beauty-section-swipper" >
               <!------=======Beauty Section Swipper Start==========-->
-               <swiper-container class="mySwiper" autoplay-delay="2500" slides-per-view="2"  space-between="20" free-mode="true" >
+               <swiper-container class="mySwiper" autoplay-delay="2500" free-mode="true" id="beauty-swipper">
                       <swiper-slide>
                         <img src="../assests/images/beautySectionSwipperImage1.webp" alt="">
                         <div class="swipper-body">
@@ -605,7 +631,7 @@
          </div>
       </div>
       <div class="social-media-swipper-container">
-      <swiper-container class="mySwiper" init="true" slides-per-view="5" space-between="40" >
+      <swiper-container class="mySwiper" init="true" id="social-media-swipper" space-between="40" autoplay-delay="2500" >
     <swiper-slide>
       <video autoplay loop infinite muted>
         <source src="../assests/videos/social-media-section-v1.mp4 ">
@@ -651,7 +677,10 @@
       <ul>
         <li><i class="fas fa-phone"></i> +92 21 111-244-266</li>
         <li><i class="fas fa-envelope"></i> info@bonanzasatrangi.com</li>
-        <li><i class="fas fa-user-clock"></i> Customer Service<br>Monday - Saturday:<br>9:30 AM – 10:00 PM PKT<br>Sunday:<br>11:00 AM – 8:00 PM PKT</li>
+        <li><i class="fas fa-user-clock"></i>
+                  <span>Customer Service
+                   <br>     Monday - Saturday:<br> 9:30 AM – 10:00 PM PKT <br>
+                            Sunday:<br> 11:00 AM – 8:00 PM PKT </span>  </li>
       </ul>
       <div class="social-icons">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -712,12 +741,12 @@
         clickable: true,
       },
       breakpoints: {
-        640: {
-          slidesPerView: 2,
+        300: {
+          slidesPerView:2,
           spaceBetween: 20,
         },
-        768: {
-          slidesPerView: 4,
+        650: {
+          slidesPerView: 2,
           spaceBetween: 40,
         },
         1024: {
@@ -727,8 +756,63 @@
       },
     });
     swiperEl.initialize();
+    const swiperElements = document.querySelectorAll('.fragrance-beauty-section-swipper swiper-container');
+
+ swiperElements.forEach(swiperEl => {
+  Object.assign(swiperEl, {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      clickable: true,
+    },
+    breakpoints: {
+      300:{
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      649:{
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      890:{
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+    },
+  });
+  swiperEl.initialize();
+});
+
+
+  const swiperE2 = document.getElementById('social-media-swipper')
+    Object.assign(swiperE2, {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        clickable: true,
+      },
+      breakpoints: {
+        300: {
+          slidesPerView:2,
+          spaceBetween: 20,
+        },
+        650: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 40,
+        },
+      },
+    });
+   swiperE2.initialize();
 
   </script>
-   
+   <script src="../js/script.js"></script>
 </body>
 </html>

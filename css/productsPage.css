@@ -1,0 +1,211 @@
+/* ======================= GOOGLE FONTS ======================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* ======================= RESET ======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Push content below header */
+body {
+  padding-top: 120px;
+}
+
+
+/* ======================= MAIN ======================= */
+/* .custom-container {
+  padding: 20px;
+} */
+
+/* ======================= HEADER BAR ======================= */
+.main-go-back {
+  display: flex;
+  justify-content: space-between;
+}
+
+#go-back {
+  border: 1px solid black;
+  padding: 6px 15px;
+  border-radius: 6px;
+}
+
+.collection-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+/* ======================= CATEGORY ======================= */
+#product-category {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  background: #ddd;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#product-category a {
+  font-size: 14px;
+}
+
+/* ======================= PRODUCT GRID ======================= */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.product-card {
+  width: 100%;
+}
+
+.product-image {
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-image img {
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.product-image img:hover {
+  transform: scale(1.08);
+}
+
+/* Badge */
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: darkred;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+/* Icons */
+.icon-buttons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.product-card:hover .icon-buttons {
+  opacity: 1;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text */
+.product-info {
+  margin-top: 10px;
+}
+
+.product-name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 13px;
+}
+
+.original {
+  text-decoration: line-through;
+}
+
+.discounted {
+  color: red;
+}
+
+
+
+/* ======================= RESPONSIVE ======================= */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+  /* body {
+    padding-top: 100px; /* smaller header */
+   */
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .collection-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+}
+
+/* Small Mobile */
+@media (max-width: 576px) {
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-name {
+    font-size: 13px;
+  }
+
+  .price {
+    font-size: 12px;
+  }
+
+  #product-category {
+    font-size: 12px;
+  }
+}

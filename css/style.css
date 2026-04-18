@@ -1,0 +1,1396 @@
+/* ======================= GOOGLE FONTS ======================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* ======================= RESET & BASE STYLES ======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ======================= NEWS TICKER ======================= */
+.news_ticker {
+  background-color: #dddddd;
+  padding: 6px 20px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+  color: #000000;
+}
+header{
+  position: fixed;
+  top:0;
+  z-index: 999;
+  background-color: white;
+  width: 100%;
+  border-bottom: 2px solid #ECECEC;
+}
+/* =================== END NEWS TICKER =================== */
+
+/* ======================= CONTAINER ======================= */
+.custom-container {
+  width: 90%;
+  max-width: 1200px;
+  margin:auto;
+
+}
+/* =================== END CONTAINER =================== */
+.close-btn{
+  display: none;
+}
+/* ======================= HEADER ======================= */
+.logo-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+
+.logo {
+  padding-left: 400px;
+}
+
+.logo img {
+  width: 350px;
+  height: 50px;
+}
+
+.icons {
+  display: flex;
+  align-items: right;
+  gap: 13px;
+}
+
+.search {
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+  width: 160px;
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  border: none;
+  font-size: 10px;
+  margin-left: 5px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.contact, .likes, .shopping-bag {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.contact {
+  width: 18px;
+  height: 18px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact i {
+  font-size: 10px;
+}
+
+.likes:hover, .contact:hover, .shopping-bag:hover {
+  transform: scale(1.1);
+}
+
+.badge {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 2px 6px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+/* =================== END HEADER =================== */
+
+/* ======================= NAVBAR ======================= */
+.navbar {
+  background-color: transparent;
+  position: relative;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 10px 0;
+   box-shadow: #ccc;
+}
+
+.nav-list li a {
+  font-size: 15px;
+  color: black;
+}
+/* =================== END NAVBAR =================== */
+
+/* ======================= DROPDOWN MENU ======================= */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 130px;
+  background: #ECECEC;
+  width: 80vw;
+  padding: 20px;
+  padding-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+.dropdown-wrapper:hover .dropdown {
+  display:flex;
+}
+
+
+
+
+.dropdown-column {
+  flex: 1 1 20%;
+  min-width: 160px;
+}
+
+.dropdown-column h6 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.dropdown-column .dropdown-list a {
+  display: block;
+  font-size: 12px;
+  text-transform: capitalize;
+  line-height: 1.5;
+  margin-bottom: 3px;
+  color: black;
+}
+
+.dropdown-image {
+  flex: 1 1 200px;
+  overflow: hidden;
+}
+
+.dropdown-image img:hover {
+  transition: transform 1s ease;
+  transform: scale(1.06);
+}
+
+#kid-pret-dropdown {
+  width: 60vw;
+  left: 50%;
+}
+
+#beauty-dropdown {
+  width: 88vw;
+  left: 100px;
+}
+
+#beauty-dropdown .dropdown-column {
+  flex: 1 1 10%;
+  min-width: 40px;
+}
+
+#fragrances-dropdown {
+  width: 70vw;
+  left: 220px;
+  padding: 34px 20px;
+}
+
+#fragrances-dropdown .dropdown-image {
+  margin-right: 20px;
+}
+/* =================== END DROPDOWN MENU =================== */
+
+/* ======================= HERO SECTION SWIPER ======================= */
+.hero-section {
+  margin-top: 160px;
+}
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* =================== END HERO SECTION SWIPER =================== */
+
+/* ======================= LATEST ARRIVAL SECTION ======================= */
+.latest-arrival-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.latest-arrival-section h1 {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.new-arrival-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.new-arrival-list a {
+  font-size: 16px;
+  color: #383636;
+  font-weight: 400;
+  word-spacing: 2px;
+}
+
+.new-arrival-list a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.new-arrival-wrapper {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.new-arrival-category {
+  width: 30%;
+}
+
+.new-arrival-category img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.new-arrival-swipper-container {
+  width: 70%;
+  padding-left: 20px;
+}
+
+.new-arrival-swipper-container .swipper-container {
+  width: 70%;
+}
+
+ swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+ swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+   transition: all 1s ease;
+}
+
+
+.new-arrival-swipper-container swiper-slide img:hover {
+   transform: scale(1.06);
+}
+
+swiper-slide p {
+  text-align: left;
+  font-size: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+swiper-slide .swiper-body {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+
+}
+
+ .swipper-body {
+  margin-top: 12px;
+}
+
+ .swipper-body span {
+  font-size: 14px;
+}
+
+ .swipper-body .old-price {
+  text-decoration: line-through;
+   margin-right:4px;
+}
+
+.swipper-body .new-price {
+  color: red;
+}
+
+ .swipper-body h2 {
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+#new-arrival-swipper swiper-slide .sale-banner {
+  position: absolute;
+  top: 5%;
+  left: 65%;
+  background-color: red;
+  color: white;
+  padding: 0px 8px;
+}
+/* =================== END LATEST ARRIVAL SECTION =================== */
+
+
+/* ===================CATEGORY SECTION START=================== */
+.category-wrapper{
+  display: flex;
+  gap:18px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.category-item{
+  width :32%;
+  height: 100%; 
+  overflow: hidden;
+  position:relative;
+}
+#category-section{
+  margin-top: 40px;
+  padding-top:30px;
+  margin-bottom: 20px;
+}
+.category-wrapper .category-item img:hover{
+  transition:all 1s ease;
+  transform :scale(1.08);
+}
+.category-item .description-container p{
+  color:white;
+}
+.category-item .description-container h1{
+  font-size:38px;
+  font-weight: 500;
+}
+
+/*=====================Category Section End=============================*/
+
+
+
+/* Style the left (previous) arrow */
+swiper-container::part(button-prev) {
+  color:black;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the right (next) arrow */
+swiper-container::part(button-next) {
+
+  color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+/*=====================Fragrance  Section Start=============================*/
+#fragrance-section{
+  display: flex;
+  margin-top :60px;
+  height: 500px;
+}
+.fragrance-items{
+  width:50%;
+  height: 100%;
+}
+.fragrance-beauty-section-swipper swiper-container {
+  width: 100%;
+  height: 100%;
+  padding:30px 20px 10px 40px;
+  background-color: #ECECEC;
+  
+}
+.fragrance-beauty-section-swipper swiper-slide{
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.fragrance-beauty-section-swipper swiper-slide  img{
+   display: block;
+   width: 95%;
+   height: 80%;
+}
+
+.fragrance-beauty-section-swipper swiper-slide  img:hover{
+  transform:scale(1.08);
+}
+#fragrance-main{
+  overflow:hidden;
+  position:relative;
+}
+#fragrance-main img{
+     height:500px;
+     transition:all 0.3s ease;
+}
+#fragrance-main img:hover{
+  transform: scale(1.08);
+}
+
+.beauty-items{
+  width:50%;
+  height:100%;
+}
+.fragrance-beauty-section-swipper .swipper-body .new-price{
+  color:black;
+}
+#beauty-section{
+  display: flex;
+  height: 500px;
+  background-color: #ECECEC;
+  margin-bottom : 60px;
+}
+#beauty-main{
+  position: relative;
+  overflow: hidden;
+}
+#beauty-main img{
+  height:500px;
+  transition:all 0.3s ease;
+}
+#beauty-main img:hover{
+  transform : scale(1.08);
+}
+.price{
+  font-size: 14px;
+  color:black;
+}
+.description-container{
+  position : absolute;
+  top : 70%;
+  left:30%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+.description-container h1{
+  font-size : 65px;
+  color :white;
+  padding-bottom: 8px;
+}
+.description-container a{
+  color : white;
+  border : 2px solid white;
+  padding :8px 20px;
+  transition:all 0.3s ease;
+}
+.description-container a:hover{
+  transform : scale(1.02);
+  border:none;
+  background-color: #000000;
+  opacity:0.5;
+} 
+/*--======== Fragrance and Beauty Section End==========-----*/
+/*--======== Mensware Section Start ================----------*/
+#mensware-section{
+  width:100%;
+  margin:50px 0px;
+  position:relative;
+}
+.mensware-section-category{
+ position:absolute;
+ left:40%;
+ bottom: 12%;
+ z-index: 999;
+}
+
+.mensware-section-category span{
+  margin-right: 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+/*-----------MensWare Section End-----------------*/
+/* ----------Social Media Section Start--------------- */
+#social-media-section{
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto; 
+}
+
+.social-media-section-wrapper{
+   margin:20px auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+.social-media-section-wrapper h1{
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.social-media-section-wrapper .social-media-links{
+  padding:15px 0px;
+}
+.social-media-section-wrapper .social-media-links a{
+  display: inline;
+  color:black;
+  padding-right:40px ;
+  /* font-weight: bold; */
+}
+
+/* ----------Social Media Section End--------------- */
+.footer {
+    background: #f3f3f3;
+    padding: 40px 0px;
+  }
+  .footer-top {
+    padding:40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+   
+  }
+  .footer-col {
+     padding-left: 20px;
+    }
+  .footer-col h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  .footer-col{
+    flex:1;
+  }
+  .contact-column ul li i{
+     margin-right: 6px;
+     padding:8px 0px;
+  }
+  .contact-column li span{
+    line-height: 1.02;
+  }
+  .footer-col ul {
+    list-style: none;
+    padding-bottom: 40px;
+  }
+  .footer-col ul li {
+    margin: 8px 0;
+    color:black;
+    font-size: 14px;
+  }
+  .footer-col ul li a {
+    transition: color .3s;
+  }
+  .footer-col ul li a:hover {
+    color: #444;
+  }
+  .newsletter-col p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .newsletter-form {
+    display: flex;
+    max-width: 300px;
+  }
+  .newsletter-form input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+  }
+  .newsletter-form button {
+    background: #000;
+    border: none;
+    padding: 0 15px;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+    transition: background .3s;
+  }
+  .newsletter-form button:hover {
+    background: #444;
+  }
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 30px auto 0;
+    padding: 40px 0px 20px 0px;
+    text-align: center;
+    font-size: 14px;
+    color:#000;
+  }
+  .social-icons  a i{
+    margin-right: 20px;
+    transition: all 0.3s ease;
+  }
+  .social-icons  a i:hover{
+    transform: translateY(4px);
+  }
+/* ================= MOBILE XS (≤576px) ================= */
+/* ================= DESKTOP LG (≥1200px) ================= */
+@media (min-width: 1200px) {
+  nav .nav-list {
+    display: flex !important;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .category-wrapper {
+    width: 100%;
+    margin: auto;
+    min-width: 1100px;
+  }
+}
+
+/* ================= DESKTOP SM (992px–1199px) ================= */
+@media  (max-width: 1199px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  .category-item{
+    width:280px;
+  }
+  .new-arrival-category img{
+    height:450px;
+  }
+  .category-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1199px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+   #fragrance-main img{
+    object-fit: cover;
+  }
+  #beauty-main img{
+    object-fit: cover;
+  }
+   #fragrance-main .description-container h1{
+    font-size: 36px;
+  }
+  .logo-section {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .logo {
+    padding-left: 0px;
+  }
+
+  .nav-list li a {
+    font-size: 14px;
+  }
+    #kid-pret-dropdown img{
+      width:300px;
+    }
+    #fragrances-dropdown{
+      width:90vw;
+      left:0px;
+    }
+   #beauty-dropdown{
+    width: 100vw;
+    left:0px;
+   }
+   #beuty-dropdown img{
+    width:190px;
+   }
+   #mens-dropdown{
+    width: 100vw ;left:0px;
+   }
+   #unstitched-dropdown{
+    width:100vw;
+    left:0px;
+   }
+   #ready-to-wear-dropdown{
+      width:100vw;
+      left:0px;
+   }
+   #arrival-dropdown{
+    width:100vw;
+    left:0px;
+   }
+}
+
+
+/* ================= TABLET (768px–991px) ================= */
+@media (max-width: 991px) {
+  .menu-toggle {
+    display: none;
+  }
+  .dropdown{
+    display: none !important;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+   .search{
+    border-bottom:none;
+   }
+ .nav-list li a {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .category-item{
+    width: 25vw;
+  }
+  .category-item img{
+    width: 100%;
+    max-width: 25vw;
+  }
+  .category-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 991px;
+    width: 100%;
+    padding: 0 8px; 
+    justify-content: center;
+    margin: auto; 
+  }
+
+  .category-item .description-container h1 {
+    font-size: 20px;
+  }
+
+  .logo img {
+    max-width: 250px;
+    padding-top: 10px;
+  }
+
+  .logo {
+    padding-left: 0px;
+  }
+
+  .logo-section {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .new-arrival-list a {
+    font-size: 13px;
+  }
+
+  .mensware-section-category span {
+    font-size: 14px;
+  }
+
+  .social-media-section-wrapper h1 {
+    font-size: 20px;
+  }
+
+  .social-media-links a {
+    font-size: 12px;
+  }
+    #fragrance-main img{
+    object-fit: cover;
+  }
+  #beauty-main{
+    object-fit: cover;
+  }
+
+
+  .custom-container {
+    max-width: 100%;
+    margin: auto;
+  }
+   .new-arrival-category img{
+    height:450px;
+  }
+  
+}
+
+/* ================= SMALL TABLET (577px–767px) ================= */
+@media (max-width: 767px) {
+ 
+    body{
+    overflow-x: hidden;
+  }
+
+  header{
+    width: 100%;
+    max-width: 767px;
+    border-bottom: 2px solid #ECECEC;
+  }
+
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 0;
+    flex: 1;
+    position: relative;
+    left:-60px;
+  }
+  .nav-list {
+    display: none !important;
+    flex-direction: column;
+    width: 60vw;
+    background-color: white;
+    position: absolute;
+    top: -30px;
+    left:10px;
+    z-index: 999;
+  }
+  .close-btn{
+      display: block !important;
+      border:none;
+      background-color:white;
+      font-size:20px;
+      position:relative;
+      left:120px;
+      top: 10px;
+      padding: 8px;
+      border-radius: 10%
+  }
+   .close-btn:hover{
+    background-color: #ECECEC;
+   }
+  .nav-list.active {
+    display: flex !important;
+  }
+
+  .nav-list li a {
+    font-size: 13px;
+    padding: 10px 15px;
+    display: block;
+    border-bottom: 1px solid #eee;
+  }
+   .logo{
+    padding-left: 0px;
+    padding-right: 100px;
+    flex:2;
+   }
+    .logo-section .logo img {
+    width: 100%;
+    max-width: 200px;
+    padding-top: 5px;
+   
+  }
+
+  .icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .icons .search {
+    width: 20px;
+    border: none;
+    margin-right: 8px;
+  }
+
+  .icons #search,
+  .icons .contact {
+    display: none;
+  }
+   .latest-arrival-section .custom-container .new-arrival-wrapper{
+    display:flex;
+    flex-direction:column;
+  }
+  .new-arrival-swipper-container{
+     width:100%;
+     max-width:767px;
+  }
+   .new-arrival-swipper-container .sale-banner{
+     width:70px;
+     white-space: nowrap;
+   }
+   .new-arrival-category{
+    display: none;
+   }
+   .category-item .description-container{
+    left:60px;
+    position: absolute;
+
+   }
+  
+   .category-item{
+    width: 40vw;
+    height:400px;
+  }
+  .category-item img{
+    width: 100%;
+    max-width: 40vw;
+    height: 400px;
+    object-fit: cover;
+  }
+  .category-wrapper {
+    grid-template-columns: 1fr 1fr ;
+    max-width: 767px;
+    width: 100%;
+    padding: 0 8px;
+    margin: auto; 
+  }
+
+  .category-item .description-container h1 {
+    font-size: 30px;
+  }
+   .category-item .description-container p{
+    font-size : 20px;
+}
+  
+  .responsive-category-item{
+    display: none;
+  }
+   
+  #beauty-section{
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  #beauty-main{
+    width: 100%;
+    height:auto;
+    max-width: 767px;
+  }
+  #fragrance-section{
+    display: flex;
+    flex-direction:column;
+    height: auto;
+  }
+   #fragrance-main{
+     width: 100%;
+    height:auto;
+    max-width: 767px;
+  }
+
+  #fragrance-main img,
+  #beauty-main img {
+    width: 100%;
+    height: 300px;
+    max-width: 767px;
+    object-fit: cover;
+  }
+  .fragrance-beauty-section-swipper swiper-slide img {
+       height:350px;
+  }
+#fragrance-main .description-container a, #beauty-main .description-container a{
+  display: none;
+}
+#fragrance-section{
+  background-color: #ECECEC;
+}
+ #fragrance-main .description-container,
+  #beauty-main .description-container {
+   position: static;
+
+  }
+  #fragrance-main .description-container h1,
+  #beauty-main .description-container h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    color:#000
+  }
+  .fragrance-beauty-section-swipper{
+    max-width: 767px;
+    width: 100%;
+  }
+    .new-arrival-category img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .new-arrival-list a {
+    font-size: 12px;
+  }
+
+  .social-media-section-wrapper h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .social-media-links a {
+    font-size: 11px;
+    margin: 0 5px;
+  }
+
+  .dropdown-wrapper:hover .dropdown {
+    display: none;
+  }
+
+  .custom-container {
+    max-width: 100%;
+    margin: auto;
+  }
+
+}
+@media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    width: 100%;
+    max-width: 576px;
+    border-bottom: 2px solid #ECECEC;
+  }
+
+ 
+    .menu-toggle {
+    display: block;
+    background-color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 0;
+    flex: 1;
+    position: relative;
+    left:0px;
+  }
+  .main-header{
+    display: flex;
+    justify-content: space-between;
+  }
+.logo-section {
+  padding-left: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo-section .logo img {
+  max-width: 900px;
+  width: 100%;
+  padding: 5px 0;
+  object-fit: contain;
+}
+ .category-item{
+    width: 40vw;
+    height:400px;
+  }
+  .category-item img{
+    width: 100%;
+    max-width: 40vw;
+    height: 350px;
+    object-fit: cover;
+  }
+  .category-wrapper {
+    grid-template-columns: 1fr 1fr ;
+    max-width: 576px;
+    width: 100%;
+    padding: 0 4px;
+    margin: auto; 
+  }
+  
+  .category-item .description-container h1 {
+    font-size: 20px;
+  }
+   .category-item .description-container p{
+    font-size : 14px;
+}
+.category-item .description-container{
+    left:30px;
+    position: absolute;
+
+   }
+
+  /* .icons .search{
+    display: none;
+  }
+  .icons .likes{
+    display: none;
+  } */
+  .icons {
+    display: none;
+    visibility: hidden;
+  }
+   
+   .fragrance-beauty-section-swipper{
+    max-width: 576px;
+    width: 100%;
+  }
+  /* =====================================================================
+   SEARCH RESULTS SECTION
+   ===================================================================== */
+
+/* --- Outer section wrapper --- */
+#search-results-section {
+  width: 100%;
+  background-color: #fafafa;
+  padding: 48px 0 80px;
+  min-height: 70vh;
+  animation: srFadeIn 0.3s ease both;
+}
+
+@keyframes srFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Divider line under header --- */
+#search-results-section > .custom-container {
+  border-top: 2px solid #ECECEC;
+  padding-top: 36px;
+}
+
+/* ── Header row ──────────────────────────────────────── */
+.search-results-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 36px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.search-results-header h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+  letter-spacing: 0.3px;
+}
+
+.search-results-header h2 span {
+  font-weight: 700;
+  color: #111;
+  font-size: 20px;
+}
+
+/* Result count badge next to heading */
+#result-count-badge {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  margin-left: 10px;
+  vertical-align: middle;
+  letter-spacing: 0.5px;
+}
+
+/* ── Clear button ────────────────────────────────────── */
+#clear-search-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: transparent;
+  color: #111;
+  border: 1.5px solid #111;
+  padding: 9px 20px;
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+#clear-search-btn:hover {
+  background: #111;
+  color: #fff;
+}
+
+#clear-search-btn i {
+  font-size: 10px;
+}
+
+/* ── No results state ────────────────────────────────── */
+#no-results-msg {
+  text-align: center;
+  padding: 80px 20px;
+  color: #888;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 1.8;
+}
+
+#no-results-msg strong {
+  display: block;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* ── Results grid ────────────────────────────────────── */
+#search-results-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 28px 20px;                         /* row-gap col-gap */
+  align-items: start;                     /* cards start at top of each row */
+}
+
+/* ── Single result card ──────────────────────────────── */
+.result-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.result-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.09);
+  transform: translateY(-3px);
+}
+
+/* ── Image wrapper — FIXED height so all cards align ── */
+.result-card-img-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 320px;       /* ← uniform image height for every card */
+  background: #f0f0f0; /* placeholder colour while image loads  */
+  flex-shrink: 0;
+}
+
+.result-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* fills box, crops if needed — keeps same size */
+  object-position: top; /* anchor crop at the top (show face/neckline) */
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.result-card:hover .result-card-img-wrap img {
+  transform: scale(1.07);
+}
+
+/* ── Sale badge ──────────────────────────────────────── */
+.result-sale-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;          /* left corner — consistent position */
+  background: #e00;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 3px 9px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+/* ── Card text body ──────────────────────────────────── */
+.result-card-body {
+  padding: 14px 14px 16px; /* top | sides | bottom */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-grow: 1;            /* stretches so price always hits bottom */
+}
+
+.result-category {
+  font-size: 10px;
+  font-weight: 600;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.result-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111;
+  margin: 0;
+  line-height: 1.45;
+  /* Clamp to 2 lines max — prevents cards from varying in height */
+  display: -webkit-box;
+  /* -webkit-line-clamp: 2; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Price row always at bottom of card body */
+.result-price {
+  margin-top: auto;
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.result-price .old-price {
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.result-price .new-price {
+  font-size: 13px;
+  font-weight: 600;
+  color: #d00;
+}
+
+.result-price .price {
+  font-size: 13px;
+  font-weight: 600;
+  color: #111;
+}
+
+}
