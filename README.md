@@ -35,7 +35,7 @@ A fully responsive, front-end e-commerce website inspired by the vibrant aesthet
   <a href="assests/videos/demoVideo.mp4">Click here to download and watch the demo video.</a>
 </video>
 
----
+demo link  https://ayesha0987654321.github.io/Bonanza-Satrangi-Inspired-E-commerce-Website/
 
 ## 📖 About the Project
 
